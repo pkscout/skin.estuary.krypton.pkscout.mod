@@ -673,3 +673,7 @@ msgstr ""
 msgctxt "#31161"
 msgid "Numeric pad"
 msgstr ""
+
+msgctxt "#40162"
+msgid "Show music visualisation screen directly when playing song"
+msgstr "Show music visualisation screen directly when playing song"

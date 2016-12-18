@@ -77,6 +77,14 @@
 					<onclick>Skin.ToggleSetting(no_fanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart)</selected>
 				</control>
+				<!-- KEJ mod to add option for music visualization to trigger automatically -->
+				<control type="radiobutton" id="610">
+					<label>$LOCALIZE[40162]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(show_musicvisualization)</onclick>
+					<selected>Skin.HasSetting(show_musicvisualization)</selected>
+				</control>
+				<!-- END KEJ mod -->
 				<control type="button" id="607">
 					<label>$LOCALIZE[31156]</label>
 					<label2>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</label2>

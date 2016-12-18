@@ -75,3 +75,7 @@ msgstr "Shift"
 msgctxt "#31133"
 msgid "Hide"
 msgstr "Hide"
+
+msgctxt "#40162"
+msgid "Show music visualisation screen directly when playing song"
+msgstr "Show music visualisation screen directly when playing song"
