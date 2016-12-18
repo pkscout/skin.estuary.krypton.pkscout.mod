@@ -132,6 +132,12 @@
 				<onup>610</onup>
 				<ondown>610</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
+				<control type="radiobutton" id="620">
+					<label>$LOCALIZE[40163]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(put_tvshows_first)</selected>
+					<onclick>Skin.ToggleSetting(put_tvshows_first)</onclick>
+				</control>
 				<control type="radiobutton" id="611">
 					<label>$LOCALIZE[342]</label>
 					<include>DefaultSettingButton</include>
@@ -221,7 +227,7 @@
 				</control>
 			</control>
 			<!-- KEJ mod to add settings for widget display -->
-			<control type="grouplist" id="620">
+			<control type="grouplist" id="800">
 				<top>160</top>
 				<left>0</left>
 				<right>0</right>
@@ -231,160 +237,204 @@
 				<onup>620</onup>
 				<ondown>620</ondown>
 				<visible>Container(9000).HasFocus(3)</visible>
-				<control type="button" id="621">
+				<control type="button" id="801">
 					<label>$LOCALIZE[20342]</label>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="radiobutton" id="6210">
+				<control type="radiobutton" id="8010">
 					<label>- $LOCALIZE[31148]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_categories)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_categories)</onclick>
 				</control>
-				<control type="radiobutton" id="6211">
+				<control type="radiobutton" id="8011">
 					<label>- $LOCALIZE[31010]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_inprogress)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_inprogress)</onclick>
 				</control>
-				<control type="radiobutton" id="6212">
+				<control type="radiobutton" id="8012">
 					<label>- $LOCALIZE[20386]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_recent)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_recent)</onclick>
 				</control>
-				<control type="radiobutton" id="6213">
+				<control type="radiobutton" id="8013">
 					<label>- $LOCALIZE[31007]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_unwatched)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_unwatched)</onclick>
 				</control>
-				<control type="radiobutton" id="6214">
+				<control type="radiobutton" id="8014">
 					<label>- $LOCALIZE[31006]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_random)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_random)</onclick>
 				</control>
-				<control type="radiobutton" id="6215">
+				<control type="radiobutton" id="8015">
 					<label>- $LOCALIZE[135]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_genres)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_genres)</onclick>
 				</control>
-				<control type="radiobutton" id="6216">
+				<control type="radiobutton" id="8016">
 					<label>- $LOCALIZE[31075]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_movie_sets)</selected>
 					<onclick>Skin.ToggleSetting(no_movie_sets)</onclick>
 				</control>
-				<control type="button" id="622">
+				<control type="button" id="802">
 					<label>$LOCALIZE[20343]</label>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="radiobutton" id="6220">
+				<control type="radiobutton" id="8020">
 					<label>- $LOCALIZE[31148]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_categories)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_categories)</onclick>
 				</control>
-				<control type="radiobutton" id="6221">
+				<control type="radiobutton" id="8021">
 					<label>- $LOCALIZE[626]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_inprogress)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_inprogress)</onclick>
 				</control>
-				<control type="radiobutton" id="6222">
+				<control type="radiobutton" id="8022">
 					<label>- $LOCALIZE[20387]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_recent)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_recent)</onclick>
 				</control>
-				<control type="radiobutton" id="6223">
+				<control type="radiobutton" id="8023">
 					<label>- $LOCALIZE[31122]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_unwatched)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_unwatched)</onclick>
 				</control>
-				<control type="radiobutton" id="6224">
+				<control type="radiobutton" id="8024">
 					<label>- $LOCALIZE[135]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_genres)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_genres)</onclick>
 				</control>
-				<control type="radiobutton" id="6225">
+				<control type="radiobutton" id="8025">
 					<label>- $LOCALIZE[20388]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_studios)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_studios)</onclick>
 				</control>
-				<control type="button" id="623">
+				<control type="button" id="803">
 					<label>$LOCALIZE[2]</label>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="radiobutton" id="6230">
+				<control type="radiobutton" id="8030">
 					<label>- $LOCALIZE[31148]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_categories)</selected>
 					<onclick>Skin.ToggleSetting(no_music_categories)</onclick>
 				</control>
-				<control type="radiobutton" id="6231">
+				<control type="radiobutton" id="8031">
 					<label>- $LOCALIZE[517]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_recentlyplayed)</selected>
 					<onclick>Skin.ToggleSetting(no_music_recentlyplayed)</onclick>
 				</control>
-				<control type="radiobutton" id="6232">
+				<control type="radiobutton" id="8032">
 					<label>- $LOCALIZE[359]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_recentlyadded)</selected>
 					<onclick>Skin.ToggleSetting(no_music_recentlyadded)</onclick>
 				</control>
-				<control type="radiobutton" id="6233">
+				<control type="radiobutton" id="8033">
 					<label>- $LOCALIZE[31012]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_randomalbums)</selected>
 					<onclick>Skin.ToggleSetting(no_music_randomalbums)</onclick>
 				</control>
-				<control type="radiobutton" id="6234">
+				<control type="radiobutton" id="8034">
 					<label>- $LOCALIZE[31013]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_randomartists)</selected>
 					<onclick>Skin.ToggleSetting(no_music_randomartists)</onclick>
 				</control>
-				<control type="radiobutton" id="6235">
+				<control type="radiobutton" id="8035">
 					<label>- $LOCALIZE[31014]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_unplayed)</selected>
 					<onclick>Skin.ToggleSetting(no_music_unplayed)</onclick>
 				</control>
-				<control type="radiobutton" id="6236">
+				<control type="radiobutton" id="8036">
 					<label>- $LOCALIZE[31011]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_music_mostplayed)</selected>
 					<onclick>Skin.ToggleSetting(no_music_mostplayed)</onclick>
 				</control>
-				<control type="button" id="624">
+				<control type="button" id="804">
 					<label>$LOCALIZE[19020]</label>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="radiobutton" id="6240">
+				<control type="radiobutton" id="8040">
 					<label>- $LOCALIZE[31148]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_pvr_categories)</selected>
 					<onclick>Skin.ToggleSetting(no_pvr_categories)</onclick>
 				</control>
-				<control type="radiobutton" id="6241">
+				<control type="radiobutton" id="8041">
 					<label>- $LOCALIZE[31016]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_pvr_channels)</selected>
 					<onclick>Skin.ToggleSetting(no_pvr_channels)</onclick>
 				</control>
-				<control type="radiobutton" id="6242">
+				<control type="radiobutton" id="8042">
 					<label>- $LOCALIZE[31015]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_pvr_recordings)</selected>
 					<onclick>Skin.ToggleSetting(no_pvr_recordings)</onclick>
 				</control>
+
+				<control type="button" id="805">
+					<label>$LOCALIZE[24000]</label>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="8050">
+					<label>- $LOCALIZE[31148]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_categories)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_categories)</onclick>
+				</control>
+				<control type="radiobutton" id="8051">
+					<label>- $LOCALIZE[1037]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_video)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_video)</onclick>
+				</control>
+				<control type="radiobutton" id="8052">
+					<label>- $LOCALIZE[1038]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_audio)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_audio)</onclick>
+				</control>
+				<control type="radiobutton" id="8053">
+					<label>- $LOCALIZE[1043]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_program)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_program)</onclick>
+				</control>
+				<control type="radiobutton" id="8054">
+					<label>- $LOCALIZE[20244]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_android)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_android)</onclick>
+					<visible>System.Platform.Android</visible>
+				</control>
+				<control type="radiobutton" id="8055">
+					<label>- $LOCALIZE[1039]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_image)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_image)</onclick>
+				</control>
+
+
 			</control>
 			<!-- END KEJ mod -->
 			<control type="image">

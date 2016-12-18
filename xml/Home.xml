@@ -814,7 +814,7 @@
 							<property name="menu_id">$NUMBER[5000]</property>
 							<thumb>icons/sidemenu/movies.png</thumb>
 							<property name="id">movies</property>
-							<visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + !Skin.HasSetting(put_tvshows_first)</visible> <!--KEJ mod to put TV shows first with setting -->
 						</item>
 						<item>
 							<label>$LOCALIZE[20343]</label>
@@ -825,6 +825,17 @@
 							<property name="id">tvshows</property>
 							<visible>!Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
 						</item>
+						<!-- KEJ mod to put TV shows first with setting -->
+						<item>
+							<label>$LOCALIZE[342]</label>
+							<onclick condition="Library.HasContent(movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+							<onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
+							<property name="menu_id">$NUMBER[5000]</property>
+							<thumb>icons/sidemenu/movies.png</thumb>
+							<property name="id">movies</property>
+							<visible>!Skin.HasSetting(HomeMenuNoMovieButton) + Skin.HasSetting(put_tvshows_first)</visible>
+						</item>
+						<!-- END KEJ mod -->
 						<item>
 							<label>$LOCALIZE[2]</label>
 							<onclick>ActivateWindow(Music,root,return)</onclick>
