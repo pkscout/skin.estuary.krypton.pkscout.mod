@@ -251,14 +251,14 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories">
+						<include condition="!Skin.HasSetting(no_addon_categories)" content="WidgetListCategories">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8900"/>
 							<param name="visible" value="Integer.IsGreater(Container(8100).NumItems,0) | Integer.IsGreater(Container(8200).NumItems,0) | Integer.IsGreater(Container(8300).NumItems,0) | Integer.IsGreater(Container(8400).NumItems,0) | Integer.IsGreater(Container(8500).NumItems,0)"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_video)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/video/"/>
 							<param name="widget_header" value="$LOCALIZE[1037]"/>
 							<param name="widget_target" value="videos"/>
@@ -267,7 +267,7 @@
 							<param name="list_id" value="8100"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_audio)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/audio/"/>
 							<param name="widget_header" value="$LOCALIZE[1038]"/>
 							<param name="widget_target" value="music"/>
@@ -276,7 +276,7 @@
 							<param name="list_id" value="8200"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_program)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/executable/"/>
 							<param name="widget_header" value="$LOCALIZE[1043]"/>
 							<param name="widget_target" value="programs"/>
@@ -285,7 +285,7 @@
 							<param name="list_id" value="8300"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include content="WidgetListSquare" condition="System.Platform.Android">
+						<include content="WidgetListSquare" condition="System.Platform.Android + !Skin.HasSetting(no_addon_android)">
 							<param name="content_path" value="androidapp://sources/apps/"/>
 							<param name="widget_header" value="$LOCALIZE[20244]"/>
 							<param name="widget_target" value="programs"/>
@@ -294,7 +294,7 @@
 							<param name="list_id" value="8400"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_image)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/image/"/>
 							<param name="widget_header" value="$LOCALIZE[1039]"/>
 							<param name="widget_target" value="pictures"/>
