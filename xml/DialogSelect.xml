@@ -62,7 +62,7 @@
 					<control type="label">
 						<left>135</left>
 						<top>0</top>
-						<width>730</width>
+						<right>20</right>
 						<height>60</height>
 						<font>font14</font>
 						<aligny>center</aligny>
