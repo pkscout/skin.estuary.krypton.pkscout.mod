@@ -1,3 +1,6 @@
+v.1.0.6
+- fix for add-on section widget selection
+
 v.1.0.5
 - fix for custom settings navigation
 
