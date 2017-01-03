@@ -1,3 +1,6 @@
+v.1.0.5
+- fix for custom settings navigation
+
 v.1.0.4
 - fix so you can view just categories in add-ons section
 
