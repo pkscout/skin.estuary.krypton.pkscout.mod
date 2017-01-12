@@ -1,5 +1,6 @@
-v.1.0.7~beta1
+v.1.0.7
 - added option for small icons for category widgets
+- updates from Estuary in Kodi 17rc3
 
 v.1.0.6
 - fix for add-on section widget selection
