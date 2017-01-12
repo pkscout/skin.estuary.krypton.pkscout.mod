@@ -1,3 +1,6 @@
+v.1.0.7~beta1
+- added option for small icons for category widgets
+
 v.1.0.6
 - fix for add-on section widget selection
 

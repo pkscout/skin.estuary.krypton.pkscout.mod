@@ -402,6 +402,96 @@
 			</control>
 		</definition>
 	</include>
+	<!-- pkscout MOD to kind of bring back old submenu style -->
+	<include name="WidgetListCategoriesIcons">
+		<param name="item_limit">20</param>
+		<param name="icon">$INFO[ListItem.Icon]</param>
+		<param name="icon_height">80</param>
+		<param name="pvr_submenu">false</param>
+		<param name="addon_submenu">false</param>
+		<param name="pvr_type">TV</param>
+		<param name="visible">true</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible] + !Control.HasFocus($PARAM[list_id])"/>
+			</include>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]: $INFO[Container($PARAM[list_id]).Listitem.Label]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible] + Control.HasFocus($PARAM[list_id])"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left></left>
+				<top>110</top>
+				<right>0</right>
+				<height>180</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<itemlayout width="95" height="115">
+					<control type="group">
+						<left>90</left>
+						<top>10</top>
+						<control type="image">
+							<width>80</width>
+							<height>80</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+						</control>
+						<control type="image">
+							<width>80</width>
+							<height>$PARAM[icon_height]</height>
+							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout width="80" height="115">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>90</left>
+						<top>10</top>
+						<control type="image">
+							<width>80</width>
+							<height>80</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+						</control>
+						<control type="image">
+							<width>80</width>
+							<height>80</height>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<width>80</width>
+							<height>$PARAM[icon_height]</height>
+							<texture fallback="DefaultFolder.png">$PARAM[icon]</texture>
+							<aspectratio>keep</aspectratio>
+						</control>
+					</control>
+				</focusedlayout>
+				<include condition="!$PARAM[pvr_submenu] + !$PARAM[addon_submenu]" content="SubmenuContent">
+					<param name="widget_target" value="$PARAM[widget_target]"/>
+					<param name="item_limit" value="$PARAM[item_limit]"/>
+					<param name="content_path" value="$PARAM[content_path]"/>
+				</include>
+				<include condition="$PARAM[pvr_submenu]" content="PVRSubMenuContent">
+					<param name="pvr_type" value="$PARAM[pvr_type]"/>
+				</include>
+				<include condition="$PARAM[addon_submenu]">AddonSubMenuContent</include>
+			</control>
+		</definition>
+	</include>
+	<!-- END pkscout mod -->
 	<include name="SubmenuContent">
 		<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
 	</include>

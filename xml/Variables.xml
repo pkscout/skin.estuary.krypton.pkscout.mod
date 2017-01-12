@@ -417,4 +417,34 @@
 		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
 		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
 	</variable>
+	<variable name="TVCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(tv_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(tv_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(tv_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(tv_categories),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="MovieCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(movie_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(movie_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(movie_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(movie_categories),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="MusicCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(music_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(music_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(music_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(music_categories),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="PVRCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(pvr_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(pvr_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(pvr_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(pvr_categories),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="AddonCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(addon_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(addon_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(addon_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(addon_categories),2)">$LOCALIZE[351]</value>
+	</variable>
 </includes>

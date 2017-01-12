@@ -50,7 +50,13 @@
 					</include>
 					<control type="grouplist" id="5001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="!Skin.HasSetting(no_movie_categories) + Library.HasContent(movies)" content="WidgetListCategories">
+						<include condition="[String.IsEmpty(Skin.String(movie_categories)) | String.IsEqual(Skin.String(movie_categories),0)] + Library.HasContent(movies)" content="WidgetListCategories">
+							<param name="content_path" value="library://video/movies/"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="5900"/>
+						</include>
+						<include condition="String.IsEqual(Skin.String(movie_categories),1) + Library.HasContent(movies)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -111,7 +117,13 @@
 					</include>
 					<control type="grouplist" id="6001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="!Skin.HasSetting(no_tv_categories) + Library.HasContent(tvshows)" content="WidgetListCategories">
+						<include condition="[String.IsEmpty(Skin.String(tv_categories)) | String.IsEqual(Skin.String(tv_categories),0)] + Library.HasContent(tvshows)" content="WidgetListCategories">
+							<param name="content_path" value="library://video/tvshows/"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="6900"/>
+						</include>
+						<include condition="String.IsEqual(Skin.String(tv_categories),1) + Library.HasContent(tvshows)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -169,7 +181,13 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="!Skin.HasSetting(no_music_categories) + Library.HasContent(music)" content="WidgetListCategories">
+						<include condition="[String.IsEmpty(Skin.String(music_categories)) | String.IsEqual(Skin.String(music_categories),0)] + Library.HasContent(movies)" content="WidgetListCategories">
+							<param name="content_path" value="library://music/"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="music"/>
+							<param name="list_id" value="7900"/>
+						</include>
+						<include condition="String.IsEqual(Skin.String(music_categories),1) + Library.HasContent(movies)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
@@ -235,7 +253,12 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="!Skin.HasSetting(no_addon_categories)">
+						<include condition="String.IsEmpty(Skin.String(addon_categories)) | String.IsEqual(Skin.String(addon_categories),0)" content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="list_id" value="8900"/>
+							<param name="addon_submenu" value="true"/>
+						</include>
+						<include condition="String.IsEqual(Skin.String(addon_categories),1)" content="WidgetListCategoriesIcons">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="8900"/>
 							<param name="addon_submenu" value="true"/>
@@ -366,7 +389,13 @@
 								</include>
 							</control>
 						</control>
-						<include content="WidgetListCategories" condition="System.HasPVRAddon + !Skin.HasSetting(no_pvr_categories)">
+						<include condition="[String.IsEmpty(Skin.String(pvr_categories)) | String.IsEqual(Skin.String(pvr_categories),0)] + System.HasPVRAddon" content="WidgetListCategories">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="list_id" value="12900"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="TV"/>
+						</include>
+						<include condition="String.IsEqual(Skin.String(pvr_categories),1) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
 							<param name="pvr_submenu" value="true"/>
