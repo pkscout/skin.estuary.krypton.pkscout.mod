@@ -557,6 +557,20 @@
 				<onclick>ActivateWindow($PARAM[pvr_type]Search)</onclick>
 				<thumb>DefaultAddonsSearch.png</thumb>
 			</item>
+			<!-- pkscout mod to add X-NEWA and PseudoLibrary items to PVR sub menu if they are installed -->
+			<item>
+				<label>X-NEWA</label>
+				<onclick>RunScript(script.xbmc.x-newa)</onclick>
+				<thumb>DefaultNetwork.png</thumb>
+				<visible>System.HasAddon(script.xbmc.x-newa)</visible>
+			</item>
+			<item>
+				<label>PseudoLibrary</label>
+				<onclick>RunScript(script.pseudo.library)</onclick>
+				<thumb>DefaultVCD.png</thumb>
+				<visible>System.HasAddon(script.pseudo.library)</visible>
+			</item>
+			<!-- END pkscout mod -->
 		</content>
 	</include>
 	<include name="WidgetListChannels">

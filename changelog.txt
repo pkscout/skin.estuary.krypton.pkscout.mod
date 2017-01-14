@@ -1,3 +1,6 @@
+v.1.0.8~beta1
+- added TV submenu items for X-NEWA and PseudoLibrary if they are installed
+
 v.1.0.7
 - added option for small icons for category widgets
 - updates from Estuary in Kodi 17rc3
