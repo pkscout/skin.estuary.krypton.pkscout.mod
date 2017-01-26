@@ -20,7 +20,7 @@
 			<randomize>true</randomize>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<visible>System.HasAddon(script.artistslideshow)</visible>
+			<visible>System.HasAddon(script.artistslideshow) + String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -32,7 +32,7 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true" colordiffuse="88FFFFFF">$INFO[Player.Art(fanart)]</texture>
-			<visible>!System.HasAddon(script.artistslideshow) | !$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtworkReady)]</visible>
+			<visible>!System.HasAddon(script.artistslideshow) | !String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)</visible>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>

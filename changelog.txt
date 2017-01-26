@@ -1,5 +1,6 @@
-v.1.0.8~beta1
+v.1.0.8
 - added TV submenu items for X-NEWA and PseudoLibrary if they are installed
+- fix for malformed boolean in MusicVisualization.xml
 
 v.1.0.7
 - added option for small icons for category widgets
