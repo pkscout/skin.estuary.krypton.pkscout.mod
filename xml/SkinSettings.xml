@@ -445,7 +445,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="button" id="8030">
-					<label>-- $LOCALIZE[31148]</label>
+					<label>- $LOCALIZE[31148]</label>
 					<label2>$VAR[MusicCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick condition="String.IsEmpty(Skin.String(music_categories))">Skin.SetString(music_categories,1)</onclick>					
