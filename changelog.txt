@@ -1,3 +1,6 @@
+v.1.1.0~beta1
+- option to reorder main home screen buttons
+
 v.1.0.9
 - updates from Estuary in Kodi 17rc4
 
