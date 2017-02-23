@@ -112,6 +112,10 @@ msgctxt "#31025"
 msgid "No favourites found. You can add any item from media views to this list by using the context menu."
 msgstr "No favourites found. You can add any item from media views to this list by using the context menu."
 
+msgctxt "#31026"
+msgid "Timeshift"
+msgstr "Timeshift"
+
 msgctxt "#31028"
 msgid "Show fanart"
 msgstr "Show fanart"
@@ -540,10 +544,7 @@ msgctxt "#31161"
 msgid "Numeric pad"
 msgstr "Numeric pad"
 
+#: /xml/SkinSettings.xml
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song"
 msgstr "Show music visualisation screen directly when playing song"
-
-msgctxt "#40163"
-msgid "Show TV Show menu item before Movie menu item"
-msgstr "Show TV Show menu item before Movie menu item"

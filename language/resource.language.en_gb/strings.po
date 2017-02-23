@@ -729,9 +729,4 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song"
-msgstr "Show music visualisation screen directly when playing song"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40163"
-msgid "Show TV Show menu item before Movie menu item"
-msgstr "Show TV Show menu item before Movie menu item"
+msgstr ""
