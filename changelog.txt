@@ -1,3 +1,6 @@
+v.1.1.2
+- minor typo corrections in certain language files
+
 v.1.1.1
 - updates from Estuary in Kodi 17.1 RC1
 
