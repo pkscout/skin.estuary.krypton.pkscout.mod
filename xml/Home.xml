@@ -194,13 +194,13 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="[String.IsEmpty(Skin.String(music_categories)) | String.IsEqual(Skin.String(music_categories),0)] + Library.HasContent(movies)" content="WidgetListCategories">
+						<include condition="[String.IsEmpty(Skin.String(music_categories)) | String.IsEqual(Skin.String(music_categories),0)] + Library.HasContent(music)" content="WidgetListCategories">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(music_categories),1) + Library.HasContent(movies)" content="WidgetListCategoriesIcons">
+						<include condition="String.IsEqual(Skin.String(music_categories),1) + Library.HasContent(music)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
