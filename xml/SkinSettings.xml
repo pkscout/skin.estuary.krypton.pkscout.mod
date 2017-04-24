@@ -429,12 +429,18 @@
 					<onclick>Skin.ToggleSetting(no_tv_unwatched)</onclick>
 				</control>
 				<control type="radiobutton" id="8024">
+					<label>- $LOCALIZE[31122] / $LOCALIZE[626]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(tv_unwatched_inprogress)</selected>
+					<onclick>Skin.ToggleSetting(tv_unwatched_inprogress)</onclick>
+				</control>
+				<control type="radiobutton" id="8025">
 					<label>- $LOCALIZE[135]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_genres)</selected>
 					<onclick>Skin.ToggleSetting(no_tv_genres)</onclick>
 				</control>
-				<control type="radiobutton" id="8025">
+				<control type="radiobutton" id="8026">
 					<label>- $LOCALIZE[20388]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_tv_studios)</selected>

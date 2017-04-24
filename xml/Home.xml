@@ -162,6 +162,12 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6300"/>
 						</include>
+						<include condition="Skin.HasSetting(tv_unwatched_inprogress)" content="WidgetListPoster">
+							<param name="content_path" value="special://skin/playlists/unwatched_inprogress_tvshows.xsp"/>
+							<param name="widget_header" value="$LOCALIZE[31122] / $LOCALIZE[626]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="6300"/>
+						</include>
 						<include condition="!Skin.HasSetting(no_tv_genres) + Library.HasContent(tvshows)" content="WidgetListCategories">
 							<param name="content_path" value="videodb://tvshows/genres/"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
