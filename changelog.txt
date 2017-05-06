@@ -1,5 +1,8 @@
+v.1.1.6
+- bug fixes in addon.xml
+
 v.1.1.5
-- bug fix for category settings not scrolling properly
+- bug fix for category settings not scrolling properlyx
 
 v.1.1.4
 - added widget to combine Unwatched and In Progress TV Shows
