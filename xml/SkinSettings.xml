@@ -403,7 +403,7 @@
 					<onclick condition="String.IsEqual(Skin.String(tv_categories),1)">Skin.SetString(tv_categories,2)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(tv_categories),0)">Skin.SetString(tv_categories,1)</onclick>
 				</control>
-				<control type="button" id="8026">
+				<control type="button" id="8027">
 					<label>-- $LOCALIZE[31157]</label>
 					<include>DefaultSettingButton</include>
 					<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=video,return)</onclick>
