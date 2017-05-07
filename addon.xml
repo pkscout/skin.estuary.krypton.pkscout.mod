@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.krypton.pkscout.mod" version="1.1.6" name="Estuary Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.krypton.pkscout.mod" version="1.1.7" name="Estuary Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.artistslideshow" version="2.0.0"/>
@@ -13,7 +13,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<news>
-1.1.6
+1.1.7
 - bug fixes
 		</news>
 		<summary lang="en_US">pkscout's Mod of Estuary skin by phil65 and Piers. (Kodi's default skin)</summary>
@@ -25,12 +25,11 @@
 		<source>https://github.com/pkscout/skin.estuary.krypton.pkscout.mod</source>
 		<assets>
 			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.png</fanart>
-			<screenshot>resources/screenshot-01.png</screenshot>
-			<screenshot>resources/screenshot-02.png</screenshot>
-			<screenshot>resources/screenshot-03.png</screenshot>
-			<screenshot>resources/screenshot-04.png</screenshot>
-			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-20170506-01.png</screenshot>
+			<screenshot>resources/screenshot-20170506-02.png</screenshot>
+			<screenshot>resources/screenshot-20170506-03.png</screenshot>
+			<screenshot>resources/screenshot-20170506-04.png</screenshot>
+			<screenshot>resources/screenshot-20170506-05.png</screenshot>
 		</assets>
 	</extension>
 </addon>
