@@ -1,3 +1,9 @@
+v.1.1.8
+- updated language files from Estuary in Kodi 17.3
+
+v.1.1.7
+- bug fixes
+
 v.1.1.6
 - bug fixes in addon.xml
 
