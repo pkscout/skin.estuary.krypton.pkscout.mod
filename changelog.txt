@@ -1,3 +1,6 @@
+v.1.1.9
+- alternate timer layout puts show name as primary in PVR lists and details
+
 v.1.1.8
 - updated language files from Estuary in Kodi 17.3
 

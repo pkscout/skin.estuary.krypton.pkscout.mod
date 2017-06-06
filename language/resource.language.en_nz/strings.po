@@ -548,3 +548,8 @@ msgstr "Numeric pad"
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song"
 msgstr "Show music visualisation screen directly when playing song"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40163"
+msgid "Use alternate timer layout"
+msgstr "Use alternate timer layout"
