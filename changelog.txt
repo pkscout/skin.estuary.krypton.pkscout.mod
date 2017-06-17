@@ -1,3 +1,7 @@
+v.1.2.0
+- fix for 4 digit channel number in PVR OSD Extended Info
+- option to show extended video info when PVR OSD is shown
+
 v.1.1.9
 - alternate timer layout puts show name as primary in PVR lists and details
 

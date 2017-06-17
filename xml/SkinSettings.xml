@@ -68,6 +68,12 @@
 					<onclick>Skin.ToggleSetting(use_alt_timer_layout)</onclick>
 					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
 				</control>
+				<control type="radiobutton" id="707">
+					<label>$LOCALIZE[40164]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(show_extended_video_info)</onclick>
+					<selected>Skin.HasSetting(show_extended_video_info)</selected>
+				</control>
 				<!-- END KEJ MOD -->
 			</control>
 			<control type="grouplist" id="600">

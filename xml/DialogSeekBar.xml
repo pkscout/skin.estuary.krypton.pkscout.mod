@@ -179,7 +179,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
+		    <!-- KEJ MOD show exended info with OSD (removed Player.ShowInfo from visible) -->
+			<visible>[Player.ShowInfo | Skin.HasSetting(show_extended_video_info)] + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
 			<animation effect="fade" time="400">VisibleChange</animation>
 			<animation effect="slide" end="0,-80" time="150" condition="Control.IsVisible(6000)">conditional</animation>
 			<bottom>0</bottom>
@@ -200,7 +201,7 @@
 			</control>
 			<control type="label">
 				<left>20</left>
-				<width>220</width>
+				<width>300</width> <!-- KEJ MOD fix for 4 digit channel number -->
 				<top>-80</top>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>

@@ -73,3 +73,8 @@ msgstr "Show music visualisation screen directly when playing song"
 msgctxt "#40163"
 msgid "Use alternate timer layout"
 msgstr "Use alternate timer layout"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40164"
+msgid "Show extended video info with PVR OSD"
+msgstr "Show extended video info with PVR OSD"
