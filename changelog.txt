@@ -1,3 +1,6 @@
+v.1.2.2
+- fix for conflicting OSD extended info and player process info
+
 v.1.2.1
 - if skin.helper.service is installed alternate timer layout also shows TV show poster and plot
 

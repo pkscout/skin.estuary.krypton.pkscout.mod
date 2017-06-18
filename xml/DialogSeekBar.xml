@@ -179,8 +179,8 @@
 			</control>
 		</control>
 		<control type="group">
-		    <!-- KEJ MOD show exended info with OSD (removed Player.ShowInfo from visible) -->
-			<visible>[Player.ShowInfo | Skin.HasSetting(show_extended_video_info)] + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
+		    <!-- KEJ MOD show exended info with OSD except when playerprocessinfo showing -->
+			<visible>[Player.ShowInfo | Skin.HasSetting(show_extended_video_info) + !Window.IsActive(playerprocessinfo)] + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)</visible>
 			<animation effect="fade" time="400">VisibleChange</animation>
 			<animation effect="slide" end="0,-80" time="150" condition="Control.IsVisible(6000)">conditional</animation>
 			<bottom>0</bottom>
