@@ -1,3 +1,12 @@
+v.1.2.3~beta3
+- tweaks to PVR timer views
+
+v.1.2.3~beta2
+- new TV Show plot behavior (requires modified skin.helper.service)
+
+v.1.2.3~beta1
+- fixes for inconsistent Skinhelper.ListItem.Plot behavior
+
 v.1.2.2
 - fix for conflicting OSD extended info and player process info
 
