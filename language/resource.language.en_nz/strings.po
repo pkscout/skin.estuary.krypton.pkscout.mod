@@ -558,3 +558,13 @@ msgstr "Use alternate timer layout"
 msgctxt "#40164"
 msgid "Show extended video info with PVR OSD"
 msgstr "Show extended video info with PVR OSD"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40165"
+msgid "Better support for four digit channel numbers in PVR"
+msgstr "Better support for four digit channel numbers in PVR"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40166"
+msgid "Use narrow channel labels in PVR"
+msgstr "Use narrow channel labels in PVR"

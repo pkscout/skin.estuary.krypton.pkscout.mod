@@ -51,52 +51,10 @@
 								<textcolor>button_focus</textcolor>
 							</control>
 						</rulerlayout>
-						<channellayout height="62" width="350">
-							<control type="label">
-								<left>2</left>
-								<top>-2</top>
-								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumberLabel]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-							</control>
-							<control type="label" id="1">
-								<left>68</left>
-								<top>-2</top>
-								<width>350</width>
-								<height>60</height>
-								<font>font12</font>
-								<label>$INFO[ListItem.ChannelName]</label>
-								<aligny>center</aligny>
-								<textoffsetx>10</textoffsetx>
-							</control>
-						</channellayout>
-						<focusedchannellayout height="62" width="350">
-							<control type="label">
-								<left>2</left>
-								<top>-2</top>
-								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumberLabel]</label>
-								<textcolor>button_focus</textcolor>
-								<align>center</align>
-								<aligny>center</aligny>
-							</control>
-							<control type="label" id="1">
-								<left>68</left>
-								<top>-2</top>
-								<width>350</width>
-								<height>60</height>
-								<font>font12</font>
-								<label>$INFO[ListItem.ChannelName]</label>
-								<textcolor>button_focus</textcolor>
-								<aligny>center</aligny>
-								<textoffsetx>10</textoffsetx>
-							</control>
-						</focusedchannellayout>
+						<!-- KEJ MOD -->
+						<include condition="!Skin.HasSetting(use_narrow_channels)">NormalPVRGuide</include>
+						<include condition="Skin.HasSetting(use_narrow_channels)">NarrowPVRGuide</include>
+						<!-- END KEJ MOD -->
 						<itemlayout height="62" width="60">
 							<control type="image" id="2">
 								<width>58</width>

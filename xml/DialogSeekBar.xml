@@ -199,9 +199,10 @@
 				<aspectratio aligny="center">keep</aspectratio>
 				<texture>$INFO[Player.Art(thumb)]</texture>
 			</control>
+			<!-- KEJ MOD -->
 			<control type="label">
 				<left>20</left>
-				<width>300</width> <!-- KEJ MOD fix for 4 digit channel number -->
+				<width>300</width>
 				<top>-80</top>
 				<height>25</height>
 				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
@@ -209,7 +210,21 @@
 				<align>center</align>
 				<font>WeatherTemp</font>
 				<aligny>center</aligny>
+				<visible>Skin.HasSetting(four_digit_channel_fix)</visible>
 			</control>
+			<control type="label">
+				<left>20</left>
+				<width>220</width>
+				<top>-80</top>
+				<height>25</height>
+				<label>$INFO[VideoPlayer.ChannelNumberLabel]</label>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<font>WeatherTemp</font>
+				<aligny>center</aligny>
+				<visible>!Skin.HasSetting(four_digit_channel_fix)</visible>
+			</control>
+			<!-- END KEJ MOD -->
 			<control type="label">
 				<right>20</right>
 				<width>800</width>

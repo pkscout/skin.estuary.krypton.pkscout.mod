@@ -74,6 +74,18 @@
 					<onclick>Skin.ToggleSetting(show_extended_video_info)</onclick>
 					<selected>Skin.HasSetting(show_extended_video_info)</selected>
 				</control>
+				<control type="radiobutton" id="708">
+					<label>$LOCALIZE[40165]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(four_digit_channel_fix)</onclick>
+					<selected>Skin.HasSetting(four_digit_channel_fix)</selected>
+				</control>
+				<control type="radiobutton" id="709">
+					<label>$LOCALIZE[40166]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(use_narrow_channels)</onclick>
+					<selected>Skin.HasSetting(use_narrow_channels)</selected>
+				</control>
 				<!-- END KEJ MOD -->
 			</control>
 			<control type="grouplist" id="600">
