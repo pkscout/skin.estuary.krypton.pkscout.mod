@@ -168,7 +168,7 @@
 				</control>
 				<control type="label">
 					<top>110</top>
-					<left>-12</left>
+					<left>-8</left>
 					<width>837</width>
 					<height>100</height>
 					<font>font36_title</font>
@@ -182,7 +182,7 @@
 					<bottom>75</bottom>
 					<label>[B]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
 					<autoscroll delay="4000" time="1500" repeat="10000">true</autoscroll>
-					<visible>ListItem.HasTimerSchedule</visible>
+					<visible>Window.Is(tvtimers) | ListItem.HasTimerSchedule</visible>
 				</control>
 				<control type="textbox">
 					<top>165</top>
@@ -191,7 +191,7 @@
 					<bottom>75</bottom>
 					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.ExternalPlot)]</label>
 					<autoscroll delay="4000" time="1500" repeat="10000">true</autoscroll>
-					<visible>!ListItem.HasTimerSchedule</visible>
+					<visible>Window.Is(tvtimerrules) + !ListItem.HasTimerSchedule</visible>
 				</control>
 			</control>
 			<control type="group">
