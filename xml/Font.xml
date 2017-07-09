@@ -69,6 +69,13 @@
 			<filename>Roboto-Thin.ttf</filename>
 			<size>70</size>
 		</font>
+		<!-- KEJ mod -->
+		<font>
+			<name>font_clock_small</name>
+			<filename>Roboto-Thin.ttf</filename>
+			<size>45</size>
+		</font>
+		<!-- End KEJ mod -->
 		<!-- Title Fonts -->
 		<font>
 			<name>font_flag</name>
@@ -182,6 +189,14 @@
 			<size>70</size>
 			<style>lighten</style>
 		</font>
+		<!-- KEJ mod -->
+		<font>
+			<name>font_clock_small</name>
+			<filename>arial.ttf</filename>
+			<size>45</size>
+			<style>lighten</style>
+		</font>
+		<!-- End KEJ mod -->
 		<!-- Title Fonts -->
 		<font>
 			<name>font_flag</name>

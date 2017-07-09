@@ -51,6 +51,7 @@
 			<control type="group">
 				<visible>!Window.IsVisible(extendedprogressdialog)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
+				<!-- KEJ mod -->
 				<control type="label">
 					<font>font_clock</font>
 					<shadowcolor>text_shadow</shadowcolor>
@@ -60,8 +61,26 @@
 					<width>600</width>
 					<align>right</align>
 					<label>$INFO[System.Time]</label>
+					<visible>!Skin.HasSetting(alt_weather)</visible>
 				</control>
+				<control type="label">
+					<font>font_clock_small</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<top>0</top>
+					<right>20</right>
+					<height>200</height>
+					<width>600</width>
+					<align>right</align>
+					<label>$INFO[System.Time]</label>
+					<visible>Skin.HasSetting(alt_weather)</visible>
+				</control>
+				<!-- END KEJ mod -->
 				<control type="grouplist">
+					<!-- KEJ mod -->
+					<animation type="Conditional" condition="Skin.HasSetting(alt_weather)">
+						<effect type="slide" end="14,-30" />
+					</animation>
+					<!-- End KEJ mod -->
 					<right>24</right>
 					<top>74</top>
 					<width>800</width>
@@ -79,16 +98,63 @@
 						<visible>Player.HasVideo</visible>
 						<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasEpg</visible>
 					</control>
+					<!-- KEJ mod -->
+					<control type="label">
+						<top>1</top>
+						<height>40</height>
+						<width>auto</width>
+						<aligny>center</aligny>
+						<textoffsetx>-8</textoffsetx>
+						<label>$INFO[System.AlarmPos]</label>
+						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather)</visible>
+					</control>
 					<control type="image">
-						<top>2</top>
+						<top>12</top>
+						<width>40</width>
+						<height>22</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="left">keep</aspectratio>
+						<texture>icons/power.png</texture>
+						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather)</visible>
+					</control>
+					<control type="label">
+						<height>40</height>
+						<width>auto</width>
+						<aligny>center</aligny>
+						<font>Font12</font>
+						<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + Skin.HasSetting(alt_weather)</visible>
+					</control>
+					<control type="image">
+						<top>-3</top>
+						<width>50</width>
+						<height>50</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="left">keep</aspectratio>
+						<texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
+						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + Skin.HasSetting(alt_weather)</visible>
+					</control>
+					<control type="image">
+						<top>4</top>
+						<left>-20</left>
+						<width>74</width>
+						<height>40</height>
+						<fadetime>300</fadetime>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
+						<texture>dialogs/volume/mute.png</texture>
+						<visible>Player.Muted + Skin.HasSetting(alt_weather)</visible>
+					</control>
+					<control type="image">
+						<top>-2</top>
 						<left>0</left>
 						<width>60</width>
 						<height>40</height>
 						<fadetime>300</fadetime>
 						<aspectratio aligny="center" align="right">keep</aspectratio>
 						<texture>dialogs/volume/mute.png</texture>
-						<visible>Player.Muted</visible>
+						<visible>Player.Muted + !Skin.HasSetting(alt_weather)</visible>
 					</control>
+					<!-- End KEJ mod -->
 				</control>
 			</control>
 		</control>

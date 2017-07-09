@@ -573,3 +573,8 @@ msgstr "Use narrow channel labels in PVR"
 msgctxt "#40167"
 msgid "Background diffusion"
 msgstr "Background diffusion"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40168"
+msgid "Use alternate location for weather widget"
+msgstr "Use alternate location for weather widget"
