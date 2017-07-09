@@ -568,3 +568,8 @@ msgstr "Better support for four digit channel numbers in PVR"
 msgctxt "#40166"
 msgid "Use narrow channel labels in PVR"
 msgstr "Use narrow channel labels in PVR"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40167"
+msgid "Background Diffusion"
+msgstr "Background Diffusion"

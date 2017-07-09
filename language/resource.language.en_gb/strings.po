@@ -750,3 +750,8 @@ msgstr ""
 msgctxt "#40166"
 msgid "Use narrow channel labels in PVR"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40167"
+msgid "Background Diffusion"
+msgstr ""

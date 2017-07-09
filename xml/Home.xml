@@ -12,6 +12,7 @@
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot9))">Skin.SetString(homemenu_slot9,9)</onload>
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot10))">Skin.SetString(homemenu_slot10,10)</onload>
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot11))">Skin.SetString(homemenu_slot11,11)</onload>
+	<onload condition="String.IsEmpty(Skin.String(bg_diffusion))">Skin.SetString(bg_diffusion,37FFFFFF)</onload>
 	<!-- END KEJ MOD -->
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
