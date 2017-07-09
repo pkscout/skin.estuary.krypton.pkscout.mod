@@ -753,5 +753,5 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40167"
-msgid "Background Diffusion"
+msgid "Background diffusion"
 msgstr ""
