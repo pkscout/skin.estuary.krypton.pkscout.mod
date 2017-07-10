@@ -61,7 +61,7 @@
 					<width>600</width>
 					<align>right</align>
 					<label>$INFO[System.Time]</label>
-					<visible>!Skin.HasSetting(alt_weather)</visible>
+					<visible>![Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)]</visible>
 				</control>
 				<control type="label">
 					<font>font_clock_small</font>
@@ -72,12 +72,12 @@
 					<width>600</width>
 					<align>right</align>
 					<label>$INFO[System.Time]</label>
-					<visible>Skin.HasSetting(alt_weather)</visible>
+					<visible>Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 				</control>
 				<!-- END KEJ mod -->
 				<control type="grouplist">
 					<!-- KEJ mod -->
-					<animation type="Conditional" condition="Skin.HasSetting(alt_weather)">
+					<animation type="Conditional" condition="Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)">
 						<effect type="slide" end="14,-30" />
 					</animation>
 					<!-- End KEJ mod -->
@@ -106,7 +106,7 @@
 						<aligny>center</aligny>
 						<textoffsetx>-8</textoffsetx>
 						<label>$INFO[System.AlarmPos]</label>
-						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather)</visible>
+						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 					</control>
 					<control type="image">
 						<top>12</top>
@@ -115,7 +115,7 @@
 						<fadetime>300</fadetime>
 						<aspectratio aligny="center" align="left">keep</aspectratio>
 						<texture>icons/power.png</texture>
-						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather)</visible>
+						<visible>System.HasAlarm(shutdowntimer) + Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 					</control>
 					<control type="label">
 						<height>40</height>
@@ -142,7 +142,7 @@
 						<fadetime>300</fadetime>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
 						<texture>dialogs/volume/mute.png</texture>
-						<visible>Player.Muted + Skin.HasSetting(alt_weather)</visible>
+						<visible>Player.Muted + Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 					</control>
 					<control type="image">
 						<top>-2</top>
@@ -152,7 +152,7 @@
 						<fadetime>300</fadetime>
 						<aspectratio aligny="center" align="right">keep</aspectratio>
 						<texture>dialogs/volume/mute.png</texture>
-						<visible>Player.Muted + !Skin.HasSetting(alt_weather)</visible>
+						<visible>Player.Muted + ![Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)]</visible>
 					</control>
 					<!-- End KEJ mod -->
 				</control>

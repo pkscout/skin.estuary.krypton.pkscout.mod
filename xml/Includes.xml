@@ -963,7 +963,7 @@
 						<width>auto</width>
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<label>$INFO[System.Time]</label>
-						<visible>!Skin.HasSetting(alt_weather)</visible>
+						<visible>![Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)]</visible>
 					</control>
 					<control type="label">
 						<font>font_clock_small</font>
@@ -972,13 +972,13 @@
 						<width>auto</width>
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<label>$INFO[System.Time]</label>
-						<visible>Skin.HasSetting(alt_weather)</visible>
+						<visible>Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
 					</control>
 					<!-- KEJ mod -->
 				</control>
 				<control type="grouplist">
 					<!-- KEJ mod -->
-					<animation type="Conditional" condition="Skin.HasSetting(alt_weather)">
+					<animation type="Conditional" condition="Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)">
 						<effect type="slide" end="0,-30" />
 					</animation>
 					<!-- KEJ mod -->
