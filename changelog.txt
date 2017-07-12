@@ -1,24 +1,10 @@
-v.1.2.3~beta7
-- fixed logic for alternate weather layout
-
-v.1.2.3~beta6
+v.1.2.3
 - added alternate layout for weather icon on top bar
-
-v.1.2.3~beta5
 - added background diffusion percentage to artwork settings
-
-v.1.2.3~beta4
 - option to better support 4 digit channels in PVR
 - option for narrow channel labels in PVR Guide
-
-v.1.2.3~beta3
 - tweaks to PVR timer views
-
-v.1.2.3~beta2
 - new TV Show plot behavior (requires modified skin.helper.service)
-
-v.1.2.3~beta1
-- fixes for inconsistent Skinhelper.ListItem.Plot behavior
 
 v.1.2.2
 - fix for conflicting OSD extended info and player process info
