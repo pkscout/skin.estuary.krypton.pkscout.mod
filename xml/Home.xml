@@ -484,13 +484,20 @@
 								</include>
 							</control>
 						</control>
-						<include content="WidgetListCategories" condition="System.HasPVRAddon">
+						<include condition="[String.IsEmpty(Skin.String(radio_categories)) | String.IsEqual(Skin.String(radio_categories),0)] + System.HasPVRAddon" content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include condition="String.IsEqual(Skin.String(radio_categories),1) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="list_id" value="13900"/>
+							<param name="pvr_submenu" value="true"/>
+							<param name="pvr_type" value="Radio"/>
+						</include>
+
+						<include content="WidgetListChannels" condition="System.HasPVRAddon  + !Skin.HasSetting(no_radio_channels)">
 							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
@@ -498,7 +505,7 @@
 							<param name="widget_target" value="files"/>
 							<param name="list_id" value="13200"/>
 						</include>
-						<include content="WidgetListChannels" condition="System.HasPVRAddon">
+						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(no_radio_recordings)">
 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
@@ -670,13 +677,20 @@
 					</include>
 					<control type="grouplist" id="16001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListCategories" condition="[String.IsEmpty(Skin.String(musicvideo_categories)) | String.IsEqual(Skin.String(musicvideo_categories),0)] + Library.HasContent(musicvideos)">
 							<param name="content_path" value="library://music/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="16900"/>
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos)">
+						<include condition="String.IsEqual(Skin.String(musicvideo_categories),1) + Library.HasContent(musicvideos)" content="WidgetListCategoriesIcons">
+							<param name="content_path" value="library://music/musicvideos/"/>
+							<param name="widget_header" value="$LOCALIZE[31148]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="list_id" value="16900"/>
+						</include>
+
+						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(no_musicvideo_recent)">
 							<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[20390]"/>
 							<param name="widget_target" value="videos"/>
@@ -686,7 +700,7 @@
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16300"/>
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(no_musicvideo_unwatched)">
 							<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31151]"/>
 							<param name="widget_target" value="videos"/>
@@ -696,14 +710,14 @@
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16400"/>
 						</include>
-						<include content="WidgetListSquare" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListSquare" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(no_mvartist_random)">
 							<param name="content_path" value="special://skin/playlists/random_musicvideo_artists.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31013]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16200"/>
 							<param name="widget_limit" value="10"/>
 						</include>
-						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListEpisodes" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(no_musicvideo_random)">
 							<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
 							<param name="widget_header" value="$LOCALIZE[31152]"/>
 							<param name="widget_target" value="videos"/>
@@ -713,7 +727,7 @@
 							<param name="fallback_image" value="DefaultMusicSongs.png" />
 							<param name="list_id" value="16500"/>
 						</include>
-						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos)">
+						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos + !Skin.HasSetting(no_musicvideo_studio))">
 							<param name="content_path" value="videodb://musicvideos/studios/"/>
 							<param name="widget_header" value="$LOCALIZE[20388]"/>
 							<param name="widget_target" value="music"/>

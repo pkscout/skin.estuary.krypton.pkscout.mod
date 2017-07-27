@@ -553,6 +553,56 @@
 					<selected>!Skin.HasSetting(no_music_mostplayed)</selected>
 					<onclick>Skin.ToggleSetting(no_music_mostplayed)</onclick>
 				</control>
+				<control type="button" id="806">
+					<label>20389</label>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="button" id="8060">
+					<label>- $LOCALIZE[31148]</label>
+					<label2>$VAR[MusicVideoCategoriesTypeVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(musicvideo_categories))">Skin.SetString(musicvideo_categories,1)</onclick>					
+					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),2)">Skin.SetString(musicvideo_categories,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),1)">Skin.SetString(musicvideo_categories,2)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),0)">Skin.SetString(musicvideo_categories,1)</onclick>
+				</control>
+				<control type="button" id="8066">
+					<label>-- $LOCALIZE[31157]</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="System.HasAddon(plugin.library.node.editor)">ActivateWindow(programs,plugin://plugin.library.node.editor/?ltype=music,return)</onclick>
+					<onclick condition="!System.HasAddon(plugin.library.node.editor)">InstallAddon(plugin.library.node.editor)</onclick>
+					<enable>!Skin.HasSetting(HomeMenuNoMusicVideoButton)</enable>
+				</control>
+				<control type="radiobutton" id="8061">
+					<label>- $LOCALIZE[20390]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_musicvideo_recent)</selected>
+					<onclick>Skin.ToggleSetting(no_musicvideo_recent)</onclick>
+				</control>
+				<control type="radiobutton" id="8062">
+					<label>- $LOCALIZE[31151]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_musicvideo_unwatched)</selected>
+					<onclick>Skin.ToggleSetting(no_musicvideo_unwatched)</onclick>
+				</control>
+				<control type="radiobutton" id="8063">
+					<label>- $LOCALIZE[31013]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_mvartist_random)</selected>
+					<onclick>Skin.ToggleSetting(no_mvartist_random)</onclick>
+				</control>
+				<control type="radiobutton" id="8064">
+					<label>- $LOCALIZE[31152]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_musicvideo_random)</selected>
+					<onclick>Skin.ToggleSetting(no_musicvideo_random)</onclick>
+				</control>
+				<control type="radiobutton" id="8065">
+					<label>- $LOCALIZE[20388]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_musicvideo_studio)</selected>
+					<onclick>Skin.ToggleSetting(no_musicvideo_studio)</onclick>
+				</control>
 				<control type="button" id="804">
 					<label>$LOCALIZE[19020]</label>
 					<include>DefaultSettingButton</include>
@@ -578,7 +628,31 @@
 					<selected>!Skin.HasSetting(no_pvr_recordings)</selected>
 					<onclick>Skin.ToggleSetting(no_pvr_recordings)</onclick>
 				</control>
-
+				<control type="button" id="807">
+					<label>$LOCALIZE[19021]</label>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="button" id="8070">
+					<label>- $LOCALIZE[31148]</label>
+					<label2>$VAR[RadioCategoriesTypeVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(radio_categories))">Skin.SetString(radio_categories,1)</onclick>					
+					<onclick condition="String.IsEqual(Skin.String(radio_categories),2)">Skin.SetString(radio_categories,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(radio_categories),1)">Skin.SetString(radio_categories,2)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(radio_categories),0)">Skin.SetString(radio_categories,1)</onclick>
+				</control>
+				<control type="radiobutton" id="8071">
+					<label>- $LOCALIZE[31016]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_radio_channels)</selected>
+					<onclick>Skin.ToggleSetting(no_radio_channels)</onclick>
+				</control>
+				<control type="radiobutton" id="8072">
+					<label>- $LOCALIZE[31015]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_radio_recordings)</selected>
+					<onclick>Skin.ToggleSetting(no_radio_recordings)</onclick>
+				</control>
 				<control type="button" id="805">
 					<label>$LOCALIZE[24000]</label>
 					<include>DefaultSettingButton</include>
