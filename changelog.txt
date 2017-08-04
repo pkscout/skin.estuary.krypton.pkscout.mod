@@ -1,3 +1,6 @@
+v.1.2.5
+- fixed inability to hide Studio widget in Music Videos
+
 v.1.2.4
 - added option for small icons for category widgets in Music Videos and Radio
 - added options to hide home screen widgets for Music Videos and Radio
