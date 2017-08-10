@@ -80,6 +80,7 @@
 					<animation type="Conditional" condition="Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)">
 						<effect type="slide" end="14,-30" />
 					</animation>
+					<visible>[!Library.IsScanningVideo + !Library.IsScanningMusic] | !Skin.HasSetting(alt_weather)</visible>
 					<!-- End KEJ mod -->
 					<right>24</right>
 					<top>74</top>
