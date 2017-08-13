@@ -134,188 +134,253 @@
 			<size>30</size>
 		</font>
 		<!-- Lyrics Fonts -->
+				<font>
+			<name>lyr1</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
 		<font>
-			<name>lyrics1</name>
-			<filename>lyrspin03.ttf</filename>
+			<name>lyr1b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr2</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics1b</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>75</size>
-		</font>
-		<font>
-			<name>lyrics2</name>
-			<filename>lyrspin09.ttf</filename>
+			<name>lyr2b</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>58</size>
 		</font>
 		<font>
-			<name>lyrics2b</name>
-			<filename>lyrspin01.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
-		</font>
-		<font>
-			<name>lyrics3</name>
-			<filename>lyrspin05.ttf</filename>
-			<linespacing>0.9</linespacing>
-			<size>120</size>
-		</font>
-		<font>
-			<name>lyrics3b</name>
-			<filename>lyrspin06.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
-		</font>
-		<font>
-			<name>lyrics4</name>
-			<filename>lyrspin08.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>60</size>
-		</font>
-		<font>
-			<name>lyrics4b</name>
-			<filename>lyrspin09.ttf</filename>
-			<linespacing>0.9</linespacing>
-			<size>120</size>
-		</font>
-		<font>
-			<name>lyrics5</name>
+			<name>lyr3</name>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
 			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>140</size>
+			<linespacing>0.9</linespacing>
+			<size>125</size>
 		</font>
 		<font>
-			<name>lyrics5b</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>75</size>
+			<name>lyr3b</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
+			<linespacing>0.85</linespacing>
+			<size>62</size>
 		</font>
 		<font>
-			<name>lyrics6</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr4</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr4b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>54</size>
+		</font>
+		<font>
+			<name>lyr5</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<aspect>1.3</aspect>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>104</size>
 		</font>
 		<font>
-			<name>lyrics6b</name>
-			<filename>lyrspin08.ttf</filename>
-			<linespacing>0.8</linespacing>
+			<name>lyr5b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>54</size>
+		</font>
+		<font>
+			<name>lyr6</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr6b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>60</size>
 		</font>
 		<font>
-			<name>lyrics7</name>
-			<filename>lyrspin03.ttf</filename>
+			<name>lyr7</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>110</size>
+		</font>
+		<font>
+			<name>lyr7a</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>155</size>
+		</font>
+		<font>
+			<name>lyr7b</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>205</size>
+		</font>
+		<font>
+			<name>lyr7c</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
+			<linespacing>0.85</linespacing>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr8</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics7b</name>
-			<filename>lyrspin06.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
+			<name>lyr8b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>54</size>
 		</font>
 		<font>
-			<name>lyrics8</name>
-			<filename>lyrspin05.ttf</filename>
+			<name>lyr9</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>130</size>
+		</font>
+		<font>
+			<name>lyr9b</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>58</size>
+		</font>
+		<font>
+			<name>lyr10</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
+			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics8b</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>70</size>
+			<name>lyr10b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>52</size>
 		</font>
 		<font>
-			<name>lyrics9</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr11</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr11b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr12</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>275</size>
 		</font>
 		<font>
-			<name>lyrics9b</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr12b</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>165</size>
 		</font>
 		<font>
-			<name>lyrics9c</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr12c</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>220</size>
 		</font>
 		<font>
-			<name>lyrics9d</name>
-			<filename>lyrspin01.ttf</filename>
+			<name>lyr12d</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>58</size>
+		</font>
+		<font>
+			<name>lyr13</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
+			<style>lowercase</style>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr13b</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
 			<linespacing>0.85</linespacing>
-			<size>60</size>
+			<size>62</size>
 		</font>
 		<font>
-			<name>lyrics0</name>
+			<name>lyr14</name>
 			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>125</size>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>140</size>
 		</font>
 		<font>
-			<name>lyrics0a</name>
-			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>175</size>
+			<name>lyr14b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>54</size>
 		</font>
 		<font>
-			<name>lyrics0b</name>
-			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>225</size>
+			<name>lyr15</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>130</size>
 		</font>
 		<font>
-			<name>lyrics0c</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>70</size>
+			<name>lyr15b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>56</size>
 		</font>
 		<font>
-			<name>lyrics1s</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>1.15</linespacing>
+			<name>lyrsh16</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>76</size>
 		</font>
 		<font>
-			<name>lyrics3s</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.80</linespacing>
-			<aspect>1.1</aspect>
-			<size>92</size>
-		</font>
-		<font>
-			<name>lyrics5s</name>
-			<filename>lyrspin01.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>80</size>
-		</font>
-		<font>
-			<name>lyrics7s</name>
-			<filename>lyrspin08.ttf</filename>
-			<style>bold</style>
-			<linespacing>0.75</linespacing>
-			<size>72</size>
-		</font>
-		<font>
-			<name>lyrics9s</name>
-			<filename>lyrspin06.ttf</filename>
+			<name>lyrsh38</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
 			<linespacing>0.85</linespacing>
-			<size>80</size>
+			<size>86</size>
+		</font>
+		<font>
+			<name>lyrsh50</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>74</size>
+		</font>
+		<font>
+			<name>lyrsh72</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>88</size>
+		</font>
+		<font>
+			<name>lyrsh94</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>78</size>
 		</font>
 	</fontset>
 	<fontset id="Arial" idloc="31053">
@@ -442,187 +507,252 @@
 		</font>
 		<!-- Lyrics Fonts -->
 		<font>
-			<name>lyrics1</name>
-			<filename>lyrspin03.ttf</filename>
+			<name>lyr1</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr1b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr2</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics1b</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>75</size>
-		</font>
-		<font>
-			<name>lyrics2</name>
-			<filename>lyrspin09.ttf</filename>
+			<name>lyr2b</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>58</size>
 		</font>
 		<font>
-			<name>lyrics2b</name>
-			<filename>lyrspin01.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
-		</font>
-		<font>
-			<name>lyrics3</name>
-			<filename>lyrspin05.ttf</filename>
-			<linespacing>0.9</linespacing>
-			<size>120</size>
-		</font>
-		<font>
-			<name>lyrics3b</name>
-			<filename>lyrspin06.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
-		</font>
-		<font>
-			<name>lyrics4</name>
-			<filename>lyrspin08.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>60</size>
-		</font>
-		<font>
-			<name>lyrics4b</name>
-			<filename>lyrspin09.ttf</filename>
-			<linespacing>0.9</linespacing>
-			<size>120</size>
-		</font>
-		<font>
-			<name>lyrics5</name>
+			<name>lyr3</name>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
 			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>140</size>
+			<linespacing>0.9</linespacing>
+			<size>125</size>
 		</font>
 		<font>
-			<name>lyrics5b</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>75</size>
+			<name>lyr3b</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
+			<linespacing>0.85</linespacing>
+			<size>62</size>
 		</font>
 		<font>
-			<name>lyrics6</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr4</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr4b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>54</size>
+		</font>
+		<font>
+			<name>lyr5</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<aspect>1.3</aspect>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>104</size>
 		</font>
 		<font>
-			<name>lyrics6b</name>
-			<filename>lyrspin08.ttf</filename>
-			<linespacing>0.8</linespacing>
+			<name>lyr5b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>54</size>
+		</font>
+		<font>
+			<name>lyr6</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr6b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>60</size>
 		</font>
 		<font>
-			<name>lyrics7</name>
-			<filename>lyrspin03.ttf</filename>
+			<name>lyr7</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>110</size>
+		</font>
+		<font>
+			<name>lyr7a</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>155</size>
+		</font>
+		<font>
+			<name>lyr7b</name>
+			<style>uppercase</style>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>205</size>
+		</font>
+		<font>
+			<name>lyr7c</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
+			<linespacing>0.85</linespacing>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr8</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics7b</name>
-			<filename>lyrspin06.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>62</size>
+			<name>lyr8b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>54</size>
 		</font>
 		<font>
-			<name>lyrics8</name>
-			<filename>lyrspin05.ttf</filename>
+			<name>lyr9</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>130</size>
+		</font>
+		<font>
+			<name>lyr9b</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>58</size>
+		</font>
+		<font>
+			<name>lyr10</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
+			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>120</size>
 		</font>
 		<font>
-			<name>lyrics8b</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>70</size>
+			<name>lyr10b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>52</size>
 		</font>
 		<font>
-			<name>lyrics9</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr11</name>
+			<filename>lyrics/Theboldfont.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr11b</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>60</size>
+		</font>
+		<font>
+			<name>lyr12</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>275</size>
 		</font>
 		<font>
-			<name>lyrics9b</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr12b</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>165</size>
 		</font>
 		<font>
-			<name>lyrics9c</name>
-			<filename>lyrspin07.ttf</filename>
+			<name>lyr12c</name>
+			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
 			<size>220</size>
 		</font>
 		<font>
-			<name>lyrics9d</name>
-			<filename>lyrspin01.ttf</filename>
+			<name>lyr12d</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>58</size>
+		</font>
+		<font>
+			<name>lyr13</name>
+			<filename>lyrics/SF Distant Galaxy.ttf</filename>
+			<style>lowercase</style>
+			<linespacing>0.9</linespacing>
+			<size>120</size>
+		</font>
+		<font>
+			<name>lyr13b</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
 			<linespacing>0.85</linespacing>
-			<size>60</size>
+			<size>62</size>
 		</font>
 		<font>
-			<name>lyrics0</name>
+			<name>lyr14</name>
 			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>125</size>
+			<filename>lyrics/Luckiest Guy.ttf</filename>
+			<size>140</size>
 		</font>
 		<font>
-			<name>lyrics0a</name>
-			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>175</size>
+			<name>lyr14b</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>54</size>
 		</font>
 		<font>
-			<name>lyrics0b</name>
-			<style>uppercase</style>
-			<filename>lyrspin10.ttf</filename>
-			<size>225</size>
+			<name>lyr15</name>
+			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>130</size>
 		</font>
 		<font>
-			<name>lyrics0c</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>0.85</linespacing>
-			<size>70</size>
+			<name>lyr15b</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>56</size>
 		</font>
 		<font>
-			<name>lyrics1s</name>
-			<filename>lyrspin02.ttf</filename>
-			<linespacing>1.15</linespacing>
+			<name>lyrsh16</name>
+			<filename>lyrics/PollerOne.ttf</filename>
+			<aspect>0.9</aspect>
 			<size>76</size>
 		</font>
 		<font>
-			<name>lyrics3s</name>
-			<filename>lyrspin04.ttf</filename>
-			<linespacing>0.80</linespacing>
-			<aspect>1.1</aspect>
-			<size>92</size>
-		</font>
-		<font>
-			<name>lyrics5s</name>
-			<filename>lyrspin01.ttf</filename>
-			<linespacing>0.8</linespacing>
-			<size>80</size>
-		</font>
-		<font>
-			<name>lyrics7s</name>
-			<filename>lyrspin08.ttf</filename>
-			<style>bold</style>
-			<linespacing>0.75</linespacing>
-			<size>72</size>
-		</font>
-		<font>
-			<name>lyrics9s</name>
-			<filename>lyrspin06.ttf</filename>
+			<name>lyrsh38</name>
+			<filename>lyrics/Exo2-BlackItalic.ttf</filename>
 			<linespacing>0.85</linespacing>
-			<size>80</size>
+			<size>86</size>
+		</font>
+		<font>
+			<name>lyrsh50</name>
+			<filename>lyrics/nasalization-rg.ttf</filename>
+			<style>bold</style>
+			<size>74</size>
+		</font>
+		<font>
+			<name>lyrsh72</name>
+			<filename>lyrics/Fredoka One.ttf</filename>
+			<linespacing>0.9</linespacing>
+			<size>88</size>
+		</font>
+		<font>
+			<name>lyrsh94</name>
+			<filename>lyrics/Ranchers-Regular.ttf</filename>
+			<aspect>1.4</aspect>
+			<linespacing>0.9</linespacing>
+			<size>78</size>
 		</font>
 	</fontset>
 </fonts>
