@@ -1,3 +1,6 @@
+v.1.2.7
+- fix for overlapping date and time in PVR Guide when using narrow channel labels
+
 v.1.2.6
 - hide weather and other indicators when alternate weather layout is in use and library scan is happening
 - moved channel logo up when using alternate timer layout and skin.helper.service
