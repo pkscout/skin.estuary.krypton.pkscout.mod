@@ -1,3 +1,6 @@
+v.1.2.8
+- small fix to show complete date in PVR when using narrow channel labels
+
 v.1.2.7
 - fix for overlapping date and time in PVR Guide when using narrow channel labels
 
