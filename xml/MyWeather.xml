@@ -237,7 +237,7 @@
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 			<control type="image">
-				<left>0</left>
+				<left>-5</left>
 				<top>-5</top>
 				<width>110%</width>
 				<height>200</height>
@@ -245,7 +245,7 @@
 				<bordersize>5</bordersize>
 			</control>
 			<control type="image">
-				<left>0</left>
+				<left>-5</left>
 				<bottom>-5</bottom>
 				<width>110%</width>
 				<height>700</height>
