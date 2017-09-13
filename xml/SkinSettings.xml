@@ -55,7 +55,7 @@
 					<onclick condition="String.IsEmpty(Weather.Plugin)">ActivateWindow(servicesettings,weather)</onclick>
 					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
 				</control>
-				<control type="radiobutton" id="710">
+				<control type="radiobutton" id="705">
 					<label>- $LOCALIZE[40168]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(alt_weather)</onclick>
@@ -63,36 +63,42 @@
 					<visible>Skin.HasSetting(show_weatherinfo)</visible>
 				</control>
 				
-				<control type="radiobutton" id="705">
+				<control type="radiobutton" id="706">
 					<label>$LOCALIZE[31160]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(hide_mediaflags)</onclick>
 					<selected>!Skin.HasSetting(hide_mediaflags)</selected>
 				</control>
 				<!-- BEGIN KEJ MOD -->
-				<control type="radiobutton" id="706">
+				<control type="radiobutton" id="707">
 					<label>$LOCALIZE[40163]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_alt_timer_layout)</onclick>
 					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
 				</control>
-				<control type="radiobutton" id="707">
+				<control type="radiobutton" id="708">
 					<label>$LOCALIZE[40164]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(show_extended_video_info)</onclick>
 					<selected>Skin.HasSetting(show_extended_video_info)</selected>
 				</control>
-				<control type="radiobutton" id="708">
+				<control type="radiobutton" id="709">
 					<label>$LOCALIZE[40165]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(four_digit_channel_fix)</onclick>
 					<selected>Skin.HasSetting(four_digit_channel_fix)</selected>
 				</control>
-				<control type="radiobutton" id="709">
+				<control type="radiobutton" id="710">
 					<label>$LOCALIZE[40166]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_narrow_channels)</onclick>
 					<selected>Skin.HasSetting(use_narrow_channels)</selected>
+				</control>
+				<control type="radiobutton" id="711">
+					<label>Use weather clock for weather page</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
+					<selected>Skin.HasSetting(use_weatherclock)</selected>
 				</control>
 				<!-- END KEJ MOD -->
 			</control>

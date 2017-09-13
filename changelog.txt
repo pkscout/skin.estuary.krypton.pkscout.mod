@@ -1,3 +1,6 @@
+v.1.2.9~beta1
+- initial code for option to have weather screen work as a weather station/clock
+
 v.1.2.8
 - small fix to show complete date in PVR when using narrow channel labels
 
