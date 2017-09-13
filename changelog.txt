@@ -1,3 +1,7 @@
+v.1.29~beta4
+- swapped out background black boxes for faded infobar (more "Estuary" look)
+
+
 v.1.2.9~beta3
 - added big hidden buttons to switch location and return home (pseudo touch support)
 - merged temp/humidity backgrounds into one long background
@@ -10,7 +14,7 @@ v.1.2.9~beta2
 
 v.1.2.9~beta1
 - initial code for option to have weather screen work as a weather station/clock
-- the indoor temp.humidity is still just a mockup
+- the indoor temp/humidity is still just a mockup
 
 v.1.2.8
 - small fix to show complete date in PVR when using narrow channel labels
