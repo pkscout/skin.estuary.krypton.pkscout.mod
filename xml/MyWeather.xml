@@ -302,6 +302,7 @@
 			<include>OpenClose_Right</include>
 			<control type="label">
 				<width>100%</width>
+				<align>center</align>
 				<description>System Time</description>
 				<font>big_time</font>
 				<textcolor>white</textcolor>
