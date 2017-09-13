@@ -240,7 +240,7 @@
 				<left>-5</left>
 				<top>-5</top>
 				<width>110%</width>
-				<height>200</height>
+				<height>120</height>
 				<texture>frame/InfoBar.png</texture>
 				<bordersize>5</bordersize>
 			</control>
