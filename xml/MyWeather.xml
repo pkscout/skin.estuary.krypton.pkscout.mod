@@ -225,74 +225,22 @@
 					<height>56</height>
 					<texture colordiffuse="button_focus">icons/logo.png</texture>
 				</control>
-				<control type="image">
-					<left>40</left>
-					<top>10</top>
-					<aspectratio>keep</aspectratio>
-					<width>192</width>
-					<height>36</height>
-					<texture>icons/logo-text.png</texture>
+				<control type="button" id="15100">
+					<description>Next Weather Location</description>
+					<posx>15</posx>
+					<posy>10</posy>
+					<width>56</width>
+					<height>56</height>
+					<font></font>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
+					<onclick>Weather.LocationNext</onclick>
 				</control>
 			</control>
-		<control type="panel" id="9002">
-			<include>VisibleFadeEffect</include>
-			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(Home)">WindowClose</animation>
-			<animation effect="fade" end="100" start="0" time="300" condition="Window.Previous(Home)">WindowOpen</animation>
-			<posx>215</posx>
-			<posy>2</posy>
-			<width>802</width>
-			<height>120</height>
-			<onleft>9002</onleft>
-			<onright>9002</onright>
-			<onup>9001</onup>
-			<ondown>20</ondown>
-			<scrolltime>300</scrolltime>
-			<orientation>Horizontal</orientation>
-			<itemlayout height="78" width="84">
-				<control type="image">
-					<posx>3</posx>
-					<posy>0</posy>
-					<width>78</width>
-					<height>78</height>
-					<bordersize>12</bordersize>
-					<texture>$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</itemlayout>
-			<focusedlayout height="78" width="84">
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>84</width>
-					<height>78</height>
-					<texture>list_focus.png</texture>
-				</control>
-				<control type="image">
-					<posx>3</posx>
-					<posy>0</posy>
-					<width>78</width>
-					<height>78</height>
-					<bordersize>12</bordersize>
-					<texture>$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-			</focusedlayout>
-			<content>
-				<item>
-					<label>184</label>
-					<onclick>Weather.Refresh</onclick>
-					<icon>icon_button_refresh.png</icon>
-				</item>
-				<item>
-					<label>31201</label>
-					<onclick>Weather.LocationNext</onclick>
-					<icon>icon_button_city.png</icon>
-				</item>
-			</content>
-		</control>
 		<control type="label">
 			<description>weather location and update label</description>
-			<posx>395</posx>
+			<visible>!String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated))</visible>
+			<posx>80</posx>
 			<posy>15</posy>
 			<width>520</width>
 			<height>60</height>
@@ -301,6 +249,19 @@
 			<align>left</align>
 			<aligny>top</aligny>
 			<label>[B]$INFO[Window.Property(Location)] :[/B] [COLOR=selected]$INFO[Window.Property(WeatherProvider)][/COLOR][CR][B]$LOCALIZE[31069] :[/B] $INFO[Window.Property(Updated)]</label>
+		</control>
+		<control type="label">
+			<description>weather updating</description>
+			<visible>String.IsEmpty(Window.Property(Location)) + String.IsEmpty(Window.Property(Updated))</visible>
+			<posx>80</posx>
+			<posy>15</posy>
+			<width>520</width>
+			<height>60</height>
+			<font>little_info</font>
+			<scroll>false</scroll>
+			<align>left</align>
+			<aligny>center</aligny>
+			<label>40170</label>
 		</control>
 		<control type="label">
 		    <align>right</align>
@@ -329,7 +290,6 @@
 			<control type="group">
 				<posx>3</posx>
 				<posy>585</posy>
-				<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Current.Temperature)) + !String.IsEmpty(Window.Property(Current.Humidity))</visible>
 				<control type="image">
 					<posx>15</posx>
 					<posy>15</posy>
@@ -341,6 +301,7 @@
 				</control>
 				<control type="label">
 					<description>current outdoor info</description>
+					<visible>!String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated)) + !String.IsEmpty(Window.Property(Current.Temperature)) + !String.IsEmpty(Window.Property(Current.Humidity))</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<align>center</align>
@@ -355,7 +316,6 @@
 			<control type="group">
 				<posx>630</posx>
 				<posy>585</posy>
-				<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day0.HighTemp)) + !String.IsEmpty(Window.Property(Day0.LowTemp))</visible>
 				<control type="image">
 					<posx>15</posx>
 					<posy>15</posy>
@@ -366,6 +326,7 @@
 					<bordersize>5</bordersize>
 				</control>
 				<control type="label">
+					<visible>!String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated)) + !String.IsEmpty(Window.Property(Day0.HighTemp)) + !String.IsEmpty(Window.Property(Day0.LowTemp))</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>646</width>

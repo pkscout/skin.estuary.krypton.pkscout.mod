@@ -95,7 +95,7 @@
 					<selected>Skin.HasSetting(use_narrow_channels)</selected>
 				</control>
 				<control type="radiobutton" id="711">
-					<label>Use weather clock for weather page</label>
+					<label>$LOCALIZE[40169]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
 					<selected>Skin.HasSetting(use_weatherclock)</selected>

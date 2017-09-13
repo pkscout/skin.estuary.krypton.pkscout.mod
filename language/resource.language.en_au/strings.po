@@ -98,3 +98,13 @@ msgstr "Background diffusion"
 msgctxt "#40168"
 msgid "Use alternate location for weather widget"
 msgstr "Use alternate location for weather widget"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40169"
+msgid "Use weather clock for weather page"
+msgstr "Use weather clock for weather page"
+
+#: /xml/MyWeather.xml
+msgctxt "#40170"
+msgid "Switching locations..."
+msgstr "Switching locations..."
