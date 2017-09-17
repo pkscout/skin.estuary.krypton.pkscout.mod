@@ -99,6 +99,16 @@
 			<size>90</size>
 		</font>
 		<font>
+			<name>ws_widget</name>
+			<filename>Arial.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
+			<name>ws_widget_large</name>
+			<filename>Arial.ttf</filename>
+			<size>120</size>
+		</font>
+		<font>
 			<name>little_info</name>
 			<filename>Arial.ttf</filename>
 			<size>20</size>
@@ -246,6 +256,16 @@
 			<name>big_forecast</name>
 			<filename>Arial.ttf</filename>
 			<size>90</size>
+		</font>
+		<font>
+			<name>ws_widget</name>
+			<filename>Arial.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
+			<name>ws_widget_large</name>
+			<filename>Arial.ttf</filename>
+			<size>120</size>
 		</font>
 		<font>
 			<name>little_info</name>

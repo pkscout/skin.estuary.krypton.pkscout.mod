@@ -1,6 +1,9 @@
+v.1.2.9~beta5
+- added dialog boxes for forecast, current, and indoor details
+- added support for script.weatherstation to get indoor info from sensors
+
 v.1.29~beta4
 - swapped out background black boxes for faded infobar (more "Estuary" look)
-
 
 v.1.2.9~beta3
 - added big hidden buttons to switch location and return home (pseudo touch support)
