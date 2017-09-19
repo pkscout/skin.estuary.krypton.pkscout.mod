@@ -6,7 +6,7 @@
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
 		    <timeperimage>600000</timeperimage>
-		    <fadetime>2000</fadetime>
+		    <fadetime>400</fadetime>
 			<randomize>true</randomize>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
@@ -133,32 +133,32 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<top>150</top>
 							<left>115</left>
+							<top>150</top>
 							<width>190</width>
 							<height>190</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<top>45</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Label]</label>
-							<width>420</width>
 						</control>
 						<control type="label">
 							<top>90</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
-							<width>420</width>
 						</control>
 						<control type="label">
 							<top>320</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Label2]</label>
-							<width>420</width>
 						</control>
 					</control>
 				</itemlayout>
@@ -168,39 +168,39 @@
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>400</width>
-							<height>420</height>
+							<width>420</width>
+							<height>400</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<top>150</top>
 							<left>115</left>
+							<top>150</top>
 							<width>190</width>
 							<height>190</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="label">
 							<top>45</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Label]</label>
-							<width>420</width>
 						</control>
 						<control type="label">
 							<top>90</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
-							<width>420</width>
 						</control>
 						<control type="label">
 							<top>320</top>
+							<width>420</width>
 							<align>center</align>
 							<font>ws_widget</font>
 							<label>$INFO[ListItem.Label2]</label>
-							<width>420</width>
 						</control>
 					</control>
 				</focusedlayout>

@@ -1,3 +1,7 @@
+v.1.2.9~beta6
+- finished layout for indoor sensors
+- added arrows to display pressure trends
+
 v.1.2.9~beta5
 - added dialog boxes for forecast, current, and indoor details
 - added support for script.weatherstation to get indoor info from sensors

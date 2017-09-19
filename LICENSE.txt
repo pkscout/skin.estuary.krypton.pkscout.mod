@@ -8,3 +8,6 @@ Estuary code work is licensed under
 GNU General Public License (GPL), Version 2.0
 You can find the license details here: <https://www.gnu.org/licenses/gpl-2.0>.
 
+The arrow icon used to show pressure trends is licenses from Arrow by Alex S. Lakas
+via the Noun Project under a Attribution 3.0 United States License.
+You can find the license details here: https://creativecommons.org/licenses/by/3.0/us/
