@@ -35,13 +35,13 @@
 			<itemgap>-160</itemgap>
 			<control type="group" id="567">
 				<description>Weather info</description>
-				<height>530</height>
+				<height>580</height>
 				<left>22</left>
 				<control type="image">
 					<left>2.5%</left>
 					<top>100</top>
 					<width>95%</width>
-					<height>430</height>
+					<height>540</height>
 					<texture border="21">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="grouplist">
@@ -68,7 +68,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<top>300</top>
+					<top>310</top>
 					<left>200</left>
 					<right>200</right>
 					<align>center</align>
@@ -76,10 +76,60 @@
 					<control type="label">
 						<description>current indoor pressure</description>
 						<align>center</align>
-						<width>1000</width>
-						<height>200</height>
-						<font>ws_widget_large</font>
+						<width>1200</width>
+						<height>230</height>
+						<font>big_temperature</font>
 						<label>$INFO[Window(weather).Property(IndoorPressure)]</label>
+					</control>
+				</control>
+				<control type="image">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rising)</visible>
+					<right>150</right>
+					<top>400</top>
+					<width>200</width>
+					<height>135</height>
+					<texture>red-single-arrow.png</texture>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly rising)</visible>
+					<top>350</top>
+					<control type="image">
+					    <right>150</right>
+						<width>200</width>
+						<height>135</height>
+						<texture>red-single-arrow.png</texture>
+					</control>
+					<control type="image">
+					    <right>150</right>
+					    <top>100</top>
+						<width>200</width>
+						<height>135</height>
+						<texture>red-single-arrow.png</texture>
+					</control>
+				</control>
+				<control type="image">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),falling)</visible>
+					<left>150</left>
+					<top>400</top>
+					<width>200</width>
+					<height>135</height>
+					<texture>blue-single-arrow.png</texture>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly falling)</visible>
+					<top>350</top>
+					<control type="image">
+					    <left>150</left>
+						<width>200</width>
+						<height>135</height>
+						<texture>blue-single-arrow.png</texture>
+					</control>
+					<control type="image">
+					    <left>150</left>
+					    <top>100</top>
+						<width>200</width>
+						<height>135</height>
+						<texture>blue-single-arrow.png</texture>
 					</control>
 				</control>
 			</control>
