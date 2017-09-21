@@ -7,7 +7,7 @@
 	<controls>
 <!-- KEJ MOD -->
 	  <control type="group">
-	    <visible>!Skin.HasSetting(use_weatherclock)</visible>
+	    <visible>!Skin.HasSetting(use_weatherclock) | !System.HasAddon(script.weatherstation)</visible>
 <!-- END KEJ MOD -->
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
@@ -121,7 +121,7 @@
 	  </control>
 <!-- KEJ MOD -->
 	  <control type="group">
-	    <visible>Skin.HasSetting(use_weatherclock)</visible>
+	    <visible>Skin.HasSetting(use_weatherclock) + System.HasAddon(script.weatherstation)</visible>
 		<control type="group">
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>

@@ -99,6 +99,7 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
 					<selected>Skin.HasSetting(use_weatherclock)</selected>
+					<visible>System.HasAddon(script.weatherstation)</visible>
 				</control>
 				<!-- END KEJ MOD -->
 			</control>
