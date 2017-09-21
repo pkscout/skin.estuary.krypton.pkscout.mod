@@ -88,7 +88,7 @@
 					<top>400</top>
 					<width>200</width>
 					<height>135</height>
-					<texture>red-single-arrow.png</texture>
+					<texture>weather/weatherstation/red-single-arrow.png</texture>
 				</control>
 				<control type="group">
 					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly rising)</visible>
@@ -97,14 +97,14 @@
 					    <right>150</right>
 						<width>200</width>
 						<height>135</height>
-						<texture>red-single-arrow.png</texture>
+						<texture>weather/weatherstation/red-single-arrow.png</texture>
 					</control>
 					<control type="image">
 					    <right>150</right>
 					    <top>100</top>
 						<width>200</width>
 						<height>135</height>
-						<texture>red-single-arrow.png</texture>
+						<texture>weather/weatherstation/red-single-arrow.png</texture>
 					</control>
 				</control>
 				<control type="image">
@@ -113,7 +113,7 @@
 					<top>400</top>
 					<width>200</width>
 					<height>135</height>
-					<texture>blue-single-arrow.png</texture>
+					<texture>weather/weatherstation/blue-single-arrow.png</texture>
 				</control>
 				<control type="group">
 					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly falling)</visible>
@@ -122,14 +122,14 @@
 					    <left>150</left>
 						<width>200</width>
 						<height>135</height>
-						<texture>blue-single-arrow.png</texture>
+						<texture>weather/weatherstation/blue-single-arrow.png</texture>
 					</control>
 					<control type="image">
 					    <left>150</left>
 					    <top>100</top>
 						<width>200</width>
 						<height>135</height>
-						<texture>blue-single-arrow.png</texture>
+						<texture>weather/weatherstation/blue-single-arrow.png</texture>
 					</control>
 				</control>
 			</control>
