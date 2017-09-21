@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1122">
-	<defaultcontrol always="true">15101</defaultcontrol>
+	<defaultcontrol always="true">15100</defaultcontrol>
 	<coordinates>
 		<left>0</left>
 		<top>0</top>
@@ -133,17 +133,6 @@
 					</control>
 				</control>
 			</control>
-		</control>
-		<control type="button" id="15101">
-			<description>Back</description>
-			<posx>1320</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>100</height>
-			<font></font>
-			<texturenofocus></texturenofocus>
-			<texturefocus></texturefocus>
-			<onclick>Dialog.Close(1122)</onclick>
 		</control>
 	</controls>
 </window>

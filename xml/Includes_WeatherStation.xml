@@ -15,6 +15,20 @@
 			<imagepath background="true" colordiffuse="Skin.String(bg_diffusion)">$VAR[WeatherFanartVar]</imagepath>
 			<visible>!Player.HasMedia</visible>
 		</control>
+		<control type="button" id="15100">
+			<description>hidden focus button</description>
+			<posx>960</posx>
+			<posy>0</posy>
+			<width>1</width>
+			<height>1</height>
+			<font></font>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
+			<onleft>15101</onleft>
+			<onright>15102</onright>
+			<onup>15104</onup>
+			<ondown>15104</ondown>
+		</control>		
 		<control type="group">
 			<depth>DepthBars</depth>
 			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -36,15 +50,31 @@
 				<texture flipy="true">frame/InfoBar.png</texture>
 				<bordersize>5</bordersize>
 			</control>
-			<control type="image">
-				<top>15</top>
-				<left>10</left>
-				<aspectratio>keep</aspectratio>
-				<width>56</width>
-				<height>56</height>
-				<texture colordiffuse="button_focus">icons/logo.png</texture>
-			</control>
 		</control>
+		<control type="button" id="15101">
+			<description>Next Weather Location</description>
+			<left>0</left>
+			<top>0</top>
+			<width>900</width>
+			<height>80</height>
+			<font></font>
+			<selectedcolor>selected</selectedcolor>
+			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+			<texturenofocus />
+			<onleft>15102</onleft>
+			<onright>15102</onright>
+			<onup>15100</onup>
+			<ondown>15103</ondown>
+			<onclick>Weather.LocationNext</onclick>
+		</control>
+		<control type="image">
+			<top>15</top>
+			<left>10</left>
+			<aspectratio>keep</aspectratio>
+			<width>56</width>
+			<height>56</height>
+			<texture colordiffuse="button_focus">icons/logo.png</texture>
+			</control>
 		<control type="label">
 			<description>weather location and update label</description>
 			<visible>!String.IsEmpty(Window(weather).Property(Location)) + !String.IsEmpty(Window(weather).Property(Updated))</visible>
@@ -71,15 +101,24 @@
 			<aligny>center</aligny>
 			<label>40170</label>
 		</control>
-		<control type="label">
-		    <align>right</align>
-		    <posx>1900</posx>
-		    <posy>0</posy>
-		    <width>1200</width>
+		<control type="button" id="15102">
 			<description>System Date</description>
+		    <align>right</align>
+		    <right>0</right>
+		    <top>0</top>
+		    <width>900</width>
+		    <height>80</height>
 			<font>big_date</font>
-			<textcolor>white</textcolor>
 			<label>$INFO[System.Date]</label>
+			<textcolor>white</textcolor>
+			<selectedcolor>selected</selectedcolor>
+			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+			<texturenofocus />
+			<onleft>15101</onleft>
+			<onright>15101</onright>
+			<onup>15100</onup>
+			<ondown>15105</ondown>
+			<onclick>Action(Back)</onclick>
 		</control>
 	</include>
 	<include name="WeatherStationIcon">
@@ -102,6 +141,48 @@
 				<label>$INFO[$PARAM[label]]</label>
 			</control>
 		</control>
+	</include>
+	<include name="WeatherStationHourlyItems">
+		<content>
+			<item>
+				<icon>resource://resource.images.weathericons.default/na.png</icon>
+				<onclick>noop</onclick>
+				<visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
+			</item>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="1" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="4" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="7" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="10" />
+			</include>
+		</content>
+	</include>
+	<include name="WeatherStationDailyItems">
+		<content>
+			<item>
+				<icon>resource://resource.images.weathericons.default/na.png</icon>
+				<onclick>noop</onclick>
+				<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+			</item>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="1" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="2" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="3" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="4" />
+			</include>
+		</content>
 	</include>
 	<include name="WeatherStationWidget">
 		<param name="width">266</param>
@@ -173,6 +254,15 @@
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>20</top>
+							<width>420</width>
+							<height>400</height>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<left>115</left>

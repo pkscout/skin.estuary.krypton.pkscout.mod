@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1120">
-	<defaultcontrol always="true">15101</defaultcontrol>
+	<defaultcontrol always="true">15100</defaultcontrol>
 	<coordinates>
 		<left>0</left>
 		<top>0</top>
@@ -19,7 +19,7 @@
 			<orientation>vertical</orientation>
 			<top>0</top>
 			<height>100%</height>
-			<left>0</left>
+			<left>50</left>
 			<ondown>20001</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
@@ -34,30 +34,19 @@
 			<include>OpenClose_Right</include>
 			<itemgap>-160</itemgap>
 			<include content="WeatherStationWidget">
-				<param name="content_include" value="DailyItems" />
-				<param name="list_id" value="15100" />
+				<param name="content_include" value="WeatherStationDailyItems" />
+				<param name="list_id" value="15110" />
 				<param name="widget_header" value="$LOCALIZE[31019]"/>
 				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 				<param name="width" value="420" />
 			</include>
 			<include content="WeatherStationWidget">
-				<param name="content_include" value="HourlyItems" />
-				<param name="list_id" value="15200" />
+				<param name="content_include" value="WeatherStationHourlyItems" />
+				<param name="list_id" value="15111" />
 				<param name="widget_header" value="$LOCALIZE[33036]"/>
 				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
 				<param name="width" value="420" />
 			</include>
-		</control>
-		<control type="button" id="15101">
-			<description>Back</description>
-			<posx>1320</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>100</height>
-			<font></font>
-			<texturenofocus></texturenofocus>
-			<texturefocus></texturefocus>
-			<onclick>Dialog.Close(1120)</onclick>
 		</control>
 	</controls>
 </window>
