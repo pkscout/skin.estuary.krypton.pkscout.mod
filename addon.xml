@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.krypton.pkscout.mod" version="1.2.9~beta6" name="Estuary Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.krypton.pkscout.mod" version="1.2.9~beta7" name="Estuary Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.artistslideshow" version="2.0.0"/>

@@ -1,3 +1,8 @@
+v.1.2.9~beta7
+- updated the placement and navigation for buttons
+- change forecast to only include next four days
+- changed hourly to four items in three hour intervals
+
 v.1.2.9~beta6
 - finished layout for indoor sensors
 - added arrows to display pressure trends
