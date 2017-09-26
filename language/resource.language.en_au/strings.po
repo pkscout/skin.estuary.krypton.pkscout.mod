@@ -108,3 +108,8 @@ msgstr "Use weather clock for weather page"
 msgctxt "#40170"
 msgid "Switching locations..."
 msgstr "Switching locations..."
+
+#: /xml/MyWeather.xml
+msgctxt "#40171"
+msgid "Auto Dim"
+msgstr "Auto Dim"

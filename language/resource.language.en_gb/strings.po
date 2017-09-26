@@ -770,3 +770,8 @@ msgstr ""
 msgctxt "#40170"
 msgid "Switching locations..."
 msgstr ""
+
+#: /xml/MyWeather.xml
+msgctxt "#40171"
+msgid "Auto Dim"
+msgstr ""

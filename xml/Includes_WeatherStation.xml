@@ -120,6 +120,20 @@
 			<ondown>15105</ondown>
 			<onclick>Action(Back)</onclick>
 		</control>
+		<control type="label">
+			<description>Auto Dim</description>
+			<visible>String.IsEqual(Window(weather).Property(AutoDim),True)</visible>
+			<top>65</top>
+			<right>10</right>
+			<width>1000</width>
+			<height>60</height>
+			<font>big_date</font>
+			<textcolor>selected</textcolor>
+			<scroll>false</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>40171</label>
+		</control>
 	</include>
 	<include name="WeatherStationIcon">
 		<control type="group">
