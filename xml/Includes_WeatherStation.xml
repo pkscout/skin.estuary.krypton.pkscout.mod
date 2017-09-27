@@ -53,6 +53,7 @@
 		</control>
 		<control type="button" id="15101">
 			<description>Next Weather Location</description>
+			<visible>!system.getbool(input.enablemouse)</visible>
 			<left>0</left>
 			<top>0</top>
 			<width>900</width>
@@ -65,6 +66,19 @@
 			<onright>15102</onright>
 			<onup>15100</onup>
 			<ondown>15103</ondown>
+			<onclick>Weather.LocationNext</onclick>
+		</control>
+		<control type="button" id="15101">
+			<description>Next Weather Location</description>
+			<visible>system.getbool(input.enablemouse)</visible>
+			<left>0</left>
+			<top>0</top>
+			<width>900</width>
+			<height>80</height>
+			<font></font>
+			<selectedcolor />
+			<texturefocus />
+			<texturenofocus />
 			<onclick>Weather.LocationNext</onclick>
 		</control>
 		<control type="image">
@@ -103,6 +117,7 @@
 		</control>
 		<control type="button" id="15102">
 			<description>System Date</description>
+			<visible>!system.getbool(input.enablemouse)</visible>
 		    <align>right</align>
 		    <right>0</right>
 		    <top>0</top>
@@ -118,6 +133,22 @@
 			<onright>15101</onright>
 			<onup>15100</onup>
 			<ondown>15105</ondown>
+			<onclick>Action(Back)</onclick>
+		</control>
+		<control type="button" id="15102">
+			<description>System Date</description>
+			<visible>system.getbool(input.enablemouse)</visible>
+		    <align>right</align>
+		    <right>0</right>
+		    <top>0</top>
+		    <width>900</width>
+		    <height>80</height>
+			<font>big_date</font>
+			<label>$INFO[System.Date]</label>
+			<textcolor>white</textcolor>
+			<selectedcolor />
+			<texturefocus />
+			<texturenofocus />
 			<onclick>Action(Back)</onclick>
 		</control>
 		<control type="label">
