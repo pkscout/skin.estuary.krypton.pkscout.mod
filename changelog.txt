@@ -1,6 +1,6 @@
 v.1.2.9
 - added option to have weather screen work as a weather station/clock
-- designed to work with script.weatherstation (available in this skin's repo)
+- designed to work with script.weatherstation (VERY EXPERIMENTAL, available in this skin's repo)
 
 v.1.2.8
 - small fix to show complete date in PVR when using narrow channel labels
