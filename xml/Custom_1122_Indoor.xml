@@ -56,7 +56,7 @@
 						<width>646</width>
 						<height>350</height>
 						<font>big_temperature</font>
-						<textcolor>lightgrey</textcolor>
+						<textcolor>grey</textcolor>
 						<label>$INFO[Window(weather).Property(IndoorTemp)]$INFO[System.TemperatureUnits]</label>
 					</control>
 					<control type="label">
@@ -65,7 +65,7 @@
 						<width>646</width>
 						<height>350</height>
 						<font>big_temperature</font>
-						<textcolor>lightgrey</textcolor>
+						<textcolor>grey</textcolor>
 						<label>$INFO[Window(weather).Property(IndoorHumidity)]</label>
 					</control>
 				</control>
@@ -81,7 +81,7 @@
 						<width>1200</width>
 						<height>230</height>
 						<font>big_temperature</font>
-						<textcolor>lightgrey</textcolor>
+						<textcolor>grey</textcolor>
 						<label>$INFO[Window(weather).Property(IndoorPressure)]</label>
 					</control>
 				</control>

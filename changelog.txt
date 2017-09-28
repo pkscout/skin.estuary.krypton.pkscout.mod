@@ -1,9 +1,13 @@
-v.1.2.10
+v.1.3.2
+- updated a few more text colors
+- added screen control window if using touchscreen (autodim, brightness, and addon settings)
+
+v.1.3.1
 - changed some colors to tone down weatherstation display some
 
-v.1.2.9
+v.1.3.0
 - added option to have weather screen work as a weather station/clock
-- designed to work with script.weatherstation (VERY EXPERIMENTAL, available in this skin's repo)
+- designed to work with script.weatherstation
 
 v.1.2.8
 - small fix to show complete date in PVR when using narrow channel labels
