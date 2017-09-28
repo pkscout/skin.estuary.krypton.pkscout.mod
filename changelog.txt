@@ -1,3 +1,6 @@
+v.1.2.10
+- changed some colors to tone down weatherstation display some
+
 v.1.2.9
 - added option to have weather screen work as a weather station/clock
 - designed to work with script.weatherstation (VERY EXPERIMENTAL, available in this skin's repo)

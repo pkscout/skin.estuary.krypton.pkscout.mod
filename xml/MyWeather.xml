@@ -137,7 +137,7 @@
 				<align>center</align>
 				<description>System Time</description>
 				<font>big_time</font>
-				<textcolor>white</textcolor>
+				<textcolor>lightgrey</textcolor>
 				<label>$INFO[System.Time(hh:mm)]</label>
 			</control>
 			<control type="button" id="15106">
@@ -184,7 +184,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=red]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR][CR][COLOR=blue][COLOR=blue]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>[COLOR=red]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR][CR][COLOR=midnightblue]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
@@ -204,7 +204,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=grey]$INFO[Window.Property(IndoorTemp)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(IndoorHumidity)][/COLOR]</label>
+					<label>[COLOR=darkkhaki]$INFO[Window.Property(IndoorTemp)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(IndoorHumidity)][/COLOR]</label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
@@ -243,7 +243,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=red]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR][CR][COLOR=blue][COLOR=blue]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<label>[COLOR=red]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR][CR][COLOR=mediumblue]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
 					<selectedcolor />
 					<texturefocus />
 					<texturenofocus />
@@ -259,7 +259,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=grey]$INFO[Window.Property(IndoorTemp)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(IndoorHumidity)][/COLOR]</label>
+					<label>[COLOR=darkkhaki]$INFO[Window.Property(IndoorTemp)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(IndoorHumidity)][/COLOR]</label>
 					<selectedcolor />
 					<texturefocus />
 					<texturenofocus />

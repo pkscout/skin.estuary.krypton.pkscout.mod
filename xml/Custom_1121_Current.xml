@@ -34,6 +34,7 @@
 				<width>500</width>
 				<align>center</align>
 				<font>big_temperature</font>
+				<textcolor>lightgrey</textcolor>
 				<label>$INFO[Weather.Temperature]</label>
 			</control>
 			<control type="label">
