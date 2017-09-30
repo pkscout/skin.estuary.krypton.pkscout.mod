@@ -137,5 +137,6 @@
 				</control>
 			</control>
 		</control>
+		<include>WeatherStationOverlay</include>
 	</controls>
 </window>

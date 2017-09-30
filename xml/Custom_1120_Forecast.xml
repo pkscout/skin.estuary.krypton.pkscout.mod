@@ -48,5 +48,6 @@
 				<param name="width" value="420" />
 			</include>
 		</control>
+		<include>WeatherStationOverlay</include>
 	</controls>
 </window>
