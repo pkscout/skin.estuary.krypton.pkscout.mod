@@ -112,6 +112,9 @@
 				<font>big_date</font>
 				<label>$INFO[System.Date]</label>
 				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturenofocus />
 				<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
 				<onleft>15101</onleft>
 				<onright>15101</onright>
@@ -130,6 +133,9 @@
 				<font>big_date</font>
 				<label>$INFO[System.Date]</label>
 				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturenofocus />
 				<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
 				<onleft>15101</onleft>
 				<onright>15101</onright>
@@ -154,6 +160,9 @@
 					<font>big_date</font>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[40171]: [COLOR=green]$LOCALIZE[16041][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
 					<onclick>RunScript(script.weatherstation,action=AutoDimOff)</onclick>
 					<onleft>15108</onleft>
 					<onright>15104</onright>
@@ -172,6 +181,9 @@
 					<font>big_date</font>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[40171]: [COLOR=red]$LOCALIZE[351][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
 					<onclick>RunScript(script.weatherstation,action=AutoDimOn)</onclick>
 					<onleft>15108</onleft>
 					<onright>15104</onright>
