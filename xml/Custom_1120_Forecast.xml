@@ -17,7 +17,7 @@
 		<include>WeatherStationTopBar</include>
 		<control type="grouplist" id="2000">
 			<orientation>vertical</orientation>
-			<top>0</top>
+			<top>100</top>
 			<height>100%</height>
 			<left>50</left>
 			<ondown>20001</ondown>

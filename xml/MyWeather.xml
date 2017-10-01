@@ -155,6 +155,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
 					<onclick>ActivateWindow(1121)</onclick>
 					<onleft>15152</onleft>
 					<onright>15151</onright>
@@ -175,6 +176,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>					
 					<onclick>ActivateWindow(1120)</onclick>
 					<onleft>15150</onleft>
 					<onright>15152</onright>
@@ -195,6 +197,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
 					<onclick>ActivateWindow(1122)</onclick>
 					<onleft>15151</onleft>
 					<onright>15150</onright>

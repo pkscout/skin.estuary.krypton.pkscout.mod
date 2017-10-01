@@ -36,6 +36,7 @@
 			<control type="group" id="567">
 				<description>Weather info</description>
 				<height>580</height>
+				<top>100</top>
 				<left>22</left>
 				<control type="image">
 					<left>2.5%</left>

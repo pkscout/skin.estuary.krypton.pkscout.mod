@@ -225,6 +225,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/back.png</texturefocus>
 					<texturenofocus>weather/weatherstation/back.png</texturenofocus>
+					<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
 					<onclick>Action(Back)</onclick>
 					<onleft>15105</onleft>
 					<onright>15107</onright>
@@ -271,8 +272,6 @@
 			<width>2000</width>
 			<height>2000</height>
 			<font></font>
-<!--			<texturefocus>colors/black.png</texturefocus>
-			<texturenofocus>colors/black.png</texturenofocus> -->
 			<texturefocus />
 			<texturenofocus />
 			<onclick>RunScript(script.weatherstation.lite,action=ScreenOn)</onclick>

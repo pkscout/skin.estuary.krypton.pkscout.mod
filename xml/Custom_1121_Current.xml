@@ -29,6 +29,7 @@
 			<include>OpenClose_Right</include>
 			<height>1000</height>
 			<width>100%</width>
+			<top>100</top>
 			<control type="image">
 				<left>2%</left>
 				<top>100</top>
