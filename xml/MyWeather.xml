@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="System.HasAddon(script.weatherstation) + Skin.HasSetting(use_weatherclock)">RunScript(script.weatherstation)</onload>
+	<onload condition="System.HasAddon(script.weatherstation.lite) + Skin.HasSetting(use_weatherclock)">RunScript(script.weatherstation.lite)</onload>
 	<defaultcontrol always="true">15100</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<menucontrol>10000</menucontrol>
 	<controls>
 <!-- KEJ MOD -->
 	  <control type="group">
-	    <visible>!Skin.HasSetting(use_weatherclock) | !System.HasAddon(script.weatherstation)</visible>
+	    <visible>!Skin.HasSetting(use_weatherclock) | !System.HasAddon(script.weatherstation.lite)</visible>
 <!-- END KEJ MOD -->
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
@@ -121,7 +121,7 @@
 	  </control>
 <!-- KEJ MOD -->
 	  <control type="group">
-	    <visible>Skin.HasSetting(use_weatherclock) + System.HasAddon(script.weatherstation)</visible>
+	    <visible>Skin.HasSetting(use_weatherclock) + System.HasAddon(script.weatherstation.lite)</visible>
 		<control type="group">
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
 			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>

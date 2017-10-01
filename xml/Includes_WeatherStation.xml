@@ -163,7 +163,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
-					<onclick>RunScript(script.weatherstation,action=AutoDimOff)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=AutoDimOff)</onclick>
 					<onleft>15108</onleft>
 					<onright>15104</onright>
 					<onup>15102</onup>
@@ -184,7 +184,7 @@
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
-					<onclick>RunScript(script.weatherstation,action=AutoDimOn)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=AutoDimOn)</onclick>
 					<onleft>15108</onleft>
 					<onright>15104</onright>
 					<onup>15102</onup>
@@ -197,7 +197,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/brightnessup.png</texturefocus>
 					<texturenofocus>weather/weatherstation/brightnessup.png</texturenofocus>
-					<onclick>RunScript(script.weatherstation,action=BrightnessUp)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=BrightnessUp)</onclick>
 					<onleft>15103</onleft>
 					<onright>15105</onright>
 					<onup>15102</onup>
@@ -211,7 +211,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/brightnessdown.png</texturefocus>
 					<texturenofocus>weather/weatherstation/brightnessdown.png</texturenofocus>
-					<onclick>RunScript(script.weatherstation,action=BrightnessDown)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=BrightnessDown)</onclick>
 					<onleft>15104</onleft>
 					<onright>15106</onright>
 					<onup>15102</onup>
@@ -239,7 +239,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/settings.png</texturefocus>
 					<texturenofocus>weather/weatherstation/settings.png</texturenofocus>
-					<onclick>Addon.OpenSettings(script.weatherstation)</onclick>
+					<onclick>Addon.OpenSettings(script.weatherstation.lite)</onclick>
 					<onleft>15106</onleft>
 					<onright>15108</onright>
 					<onup>15102</onup>
@@ -253,7 +253,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/power.png</texturefocus>
 					<texturenofocus>icons/power.png</texturenofocus>
-					<onclick>RunScript(script.weatherstation,action=ScreenOff)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=ScreenOff)</onclick>
 					<onleft>15107</onleft>
 					<onright>15103</onright>
 					<onup>15102</onup>
@@ -275,7 +275,7 @@
 			<texturenofocus>colors/black.png</texturenofocus> -->
 			<texturefocus />
 			<texturenofocus />
-			<onclick>RunScript(script.weatherstation,action=ScreenOn)</onclick>
+			<onclick>RunScript(script.weatherstation.lite,action=ScreenOn)</onclick>
 		</control>
 	</include>
 	<include name="WeatherStationIcon">

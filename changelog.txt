@@ -1,3 +1,6 @@
+v.1.5.1
+- fixes due to change of Weather Station script name to script.weatherstation.lite
+
 v.1.5.0
 - fix in weatherstation to hide outside weather and forecast if strange data is sent back
 - added support for external addon to hide the large mouse cursor
