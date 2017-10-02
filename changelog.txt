@@ -1,3 +1,7 @@
+v.1.5.2
+- after "power off" navigation menu is hidden
+- screen off overlay is black now (helps since you can't completely dim the Pi display)
+
 v.1.5.1
 - fixes due to change of Weather Station script name to script.weatherstation.lite
 - fixes to account for new "drop down" navigation buttons

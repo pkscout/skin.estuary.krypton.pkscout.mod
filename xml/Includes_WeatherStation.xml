@@ -254,6 +254,7 @@
 					<label></label>
 					<texturefocus colordiffuse="selected">weather/weatherstation/power.png</texturefocus>
 					<texturenofocus>icons/power.png</texturenofocus>
+					<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
 					<onclick>RunScript(script.weatherstation.lite,action=ScreenOff)</onclick>
 					<onleft>15107</onleft>
 					<onright>15103</onright>
@@ -272,8 +273,8 @@
 			<width>2000</width>
 			<height>2000</height>
 			<font></font>
-			<texturefocus />
-			<texturenofocus />
+			<texturefocus>colors/black.png</texturefocus>
+			<texturenofocus>colors/black.png</texturenofocus>
 			<onclick>RunScript(script.weatherstation.lite,action=ScreenOn)</onclick>
 		</control>
 	</include>
