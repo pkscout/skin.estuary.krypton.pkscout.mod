@@ -1,6 +1,7 @@
-v.1.5.2
+v.1.5.2~beta1
 - after "power off" navigation menu is hidden
 - screen off overlay is black now (helps since you can't completely dim the Pi display)
+- fix to the fix for strange data back from Weather Underground
 
 v.1.5.1
 - fixes due to change of Weather Station script name to script.weatherstation.lite

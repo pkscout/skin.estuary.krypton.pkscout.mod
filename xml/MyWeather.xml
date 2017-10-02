@@ -143,7 +143,7 @@
 			<control type="group">
 				<control type="button" id="15150">
 					<description>current outdoor info</description>
-					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated) + !String.IsEmpty(Window.Property(Current.Temperature)) + !String.IsEmpty(Window.Property(Current.Humidity)) + !String.EndsWith(Current.Humidity,%%)</visible>
+					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated) + !String.IsEmpty(Window.Property(Current.Temperature)) + !String.IsEmpty(Window.Property(Current.Humidity)) + !String.Contains(Window.Property(Current.Humidity),%%)</visible>
 					<posx>13</posx>
 					<posy>750</posy>
 					<align>center</align>
@@ -164,7 +164,7 @@
 				</control>
 				<control type="button" id="15151">
 					<description>current forecast for today</description>
-					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated)) + !String.IsEmpty(Window.Property(Day0.HighTemp)) + !String.IsEmpty(Window.Property(Day0.LowTemp))  + !String.EndsWith(Current.Humidity,%%)</visible>
+					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated)) + !String.IsEmpty(Window.Property(Day0.HighTemp)) + !String.IsEmpty(Window.Property(Day0.LowTemp))  + !String.Contains(Window.Property(Current.Humidity),%%)</visible>
 					<posx>630</posx>
 					<posy>750</posy>
 					<align>center</align>
