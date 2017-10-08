@@ -44,7 +44,7 @@
 				<left>-5</left>
 				<bottom>-5</bottom>
 				<width>110%</width>
-				<height>700</height>
+				<height>300</height>
 				<texture flipy="true">frame/InfoBar.png</texture>
 				<bordersize>5</bordersize>
 			</control>
