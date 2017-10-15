@@ -1,6 +1,6 @@
 v.1.5.2~beta3
-- if there's weird data from the weather addon or inside sensor, show question marks
-- small change to bottom black gradation
+- if there's weird data from the weather addon or inside sensor, don't show anything
+- if weather is fetching, don't show outdoor information
 
 v.1.5.2~beta2
 - script.weatherstation no longer has to be run from skin, so removed onload
