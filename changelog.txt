@@ -1,3 +1,6 @@
+v.1.5.2~beta4
+- change to artist image display to only show transparency overlay if player info or osd showing
+
 v.1.5.2~beta3
 - if there's weird data from the weather addon or inside sensor, don't show anything
 - if weather is fetching, don't show outdoor information
