@@ -171,7 +171,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=green]??[CR]??[/COLOR]</label>
+					<label></label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
@@ -202,7 +202,7 @@
 					<ondown>15100</ondown>
 				</control>
 				<control type="button" id="15151">
-					<description>current forecast for today</description>
+					<description>current forecast for today error</description>
 					<visible>String.Contains(Window.Property(Current.Humidity),%%)</visible>
 					<posx>630</posx>
 					<posy>750</posy>
@@ -211,7 +211,7 @@
 					<width>646</width>
 					<height>400</height>
 					<font>big_temperature</font>
-					<label>[COLOR=red]??[/COLOR][CR][COLOR=mediumblue]??[/COLOR]</label>
+					<label></label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
@@ -242,7 +242,7 @@
 					<ondown>15100</ondown>
 				</control>
 				<control type="button" id="15152">
-					<description>current indoor info</description>
+					<description>current indoor info empty</description>
 					<visible>String.IsEmpty(Window.Property(IndoorTemp))</visible>
 					<posx>1260</posx>
 					<posy>750</posy>
