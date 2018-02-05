@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="System.HasAddon(script.weatherstation.lite) + Skin.HasSetting(use_weatherclock)">RunScript(script.weatherstation.lite)</onload>
 	<defaultcontrol always="true">15100</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<menucontrol>10000</menucontrol>
@@ -143,7 +142,7 @@
 			<control type="group">
 				<control type="button" id="15150">
 					<description>current outdoor info</description>
-					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated) + !String.IsEmpty(Window.Property(Current.Temperature)) + !String.IsEmpty(Window.Property(Current.Humidity)) + !String.EndsWith(Current.Humidity,%%)</visible>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + ![String.Contains(Window.Property(Current.Humidity),%%)]</visible>
 					<posx>13</posx>
 					<posy>750</posy>
 					<align>center</align>
@@ -162,9 +161,28 @@
 					<onup>15101</onup>
 					<ondown>15100</ondown>
 				</control>
+				<control type="button" id="15150">
+					<description>current outdoor info error</description>
+					<visible>String.Contains(Window.Property(Current.Humidity),%%)</visible>
+					<posx>13</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onleft>15152</onleft>
+					<onright>15151</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
 				<control type="button" id="15151">
 					<description>current forecast for today</description>
-					<visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Location)) + !String.IsEmpty(Window.Property(Updated)) + !String.IsEmpty(Window.Property(Day0.HighTemp)) + !String.IsEmpty(Window.Property(Day0.LowTemp))  + !String.EndsWith(Current.Humidity,%%)</visible>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + ![String.Contains(Window.Property(Current.Humidity),%%)]</visible>
 					<posx>630</posx>
 					<posy>750</posy>
 					<align>center</align>
@@ -178,6 +196,25 @@
 					<texturenofocus />
 					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>					
 					<onclick>ActivateWindow(1120)</onclick>
+					<onleft>15150</onleft>
+					<onright>15152</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15151">
+					<description>current forecast for today error</description>
+					<visible>String.Contains(Window.Property(Current.Humidity),%%)</visible>
+					<posx>630</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
 					<onleft>15150</onleft>
 					<onright>15152</onright>
 					<onup>15101</onup>
@@ -199,6 +236,25 @@
 					<texturenofocus />
 					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
 					<onclick>ActivateWindow(1122)</onclick>
+					<onleft>15151</onleft>
+					<onright>15150</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15152">
+					<description>current indoor info empty</description>
+					<visible>String.IsEmpty(Window.Property(IndoorTemp))</visible>
+					<posx>1260</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
 					<onleft>15151</onleft>
 					<onright>15150</onright>
 					<onup>15101</onup>

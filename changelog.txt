@@ -1,5 +1,10 @@
 v.1.5.2
-- after "power off" navigation menu is hidden
+For Artist Slideshow:
+- change to artist image display to only show transparency overlay if player info or osd showing
+For Weatherstation Lite:
+- if there's weird data from the weather addon or inside sensor, don't show anything
+- if weather is fetching, don't show outdoor information
+- script.weatherstation no longer has to be run from skin, so removed onload
 - screen off overlay is black now (helps since you can't completely dim the Pi display)
 
 v.1.5.1
