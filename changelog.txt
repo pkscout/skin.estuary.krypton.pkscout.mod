@@ -1,3 +1,7 @@
+v.1.5.3
+- updated Hebrew translations (thanks to Eng2Heb)
+- new icons for audio and subtitle languages (thanks to splendid25)
+
 v.1.5.2
 For Artist Slideshow:
 - change to artist image display to only show transparency overlay if player info or osd showing
